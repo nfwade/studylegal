@@ -1,0 +1,36 @@
+{% include 'pages/inc/header.html' %}
+{% include 'admin/inc/admin-header.html' %}
+  <div class="sixteen wide column centered">
+    <div class="ui segment">
+      <h1 class="centered">{{page.name}} Study Legal</h1>
+      <h3>Completed Books</h3><hr/>
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Full Name</th>
+            <th>Author</th>
+            <th>Subject</th>
+            <th>Publication Year</th>
+        </tr></thead>
+        <tbody>
+          {% for book in admindata.completedbooks %}
+          <tr>
+            <td>{{book.id}}</td>
+
+            <td>{{book.full_name}}</td>
+
+            <td>{{book.author}}</td>
+
+            <td>{{book.subject}}</td>
+
+            <td>{{book.publication_year}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+  </div>
+</div>
+
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

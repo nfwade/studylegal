@@ -1,0 +1,55 @@
+</div>
+<div class="ui inverted vertical footer segment sl-footer">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="row">
+          <img src="/assets/img/logo_study_legal_white.png" style="width:140px;height:42px; margin:0 auto;" />
+        </div>
+        <div class="four wide column" style="box-shadow:none !important">
+        </div>
+        <div class="two wide column">
+          <h4 class="ui inverted header">Study Legal</h4>
+          <div class="ui inverted link list">
+            <a href="/about" class="item">About</a>
+            <a href="/features" class="item">Features</a>
+            <a href="/learn" class="item">Learn</a>
+          </div>
+        </div>
+        <div class="two wide column">
+          <div class="ui inverted link list">
+            {% if user.pro == false %}<a href="/pro" class="item">Get Pro</a>{% endif %}
+            <a href="/updates" class="item">Updates</a>
+            <a class="item contact-btn">Contact</a>
+            <a href="/sitemap.xml" class="item">Sitemap</a>
+          </div>
+        </div>
+        {% if user.loggedin == false %}
+        <div class="two wide column">
+          <h4 class="ui inverted header">Users</h4>
+          <div class="ui inverted link list">
+            <a class="item register-btn">Sign Up</a>
+            <a class="item login-btn">Log In</a>
+          </div>
+        </div>
+        {% endif %}
+        <div class="three wide column">
+          <h4 class="ui inverted header">Legal</h4>
+          <div class="ui inverted link list">
+            <a href="/terms" class="item">Terms and Conditions</a>
+            <a href="/privacy" class="item">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--grid-->
+<div class="footer-company-name">Study Legal, LLC</div>
+{% include 'pages/modals/contact.html' %}
+
+{% include 'pages/modals/login.html' %}
+
+{% include 'pages/modals/register.html' %}
+
+{% include 'pages/modals/reset-password.html' %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% include 'pages/inc/header.html' %}
+  <script>
+  $(document)
+    .ready(function() {
+      ga('send', 'event', { eventCategory: 'registration', eventAction: 'form-submitted-successfully', eventLabel: '{{ data.email }}'});
+    });
+  </script>
+  <div class="five wide column centered ui segment">
+    <img src="/assets/img/study_legal_icon.png" class="sl-alert-icon ui centered image" />
+    <h1 class="sl-alert-h1">Registration Successful</h1>
+    <div class="ui divider"></div>
+    <p class="sl-alert-p">
+      <i class="huge mail icon"></i><br/><br/>
+      Please confirm your email address.  We sent you an email to confirm your account.  Check your email and click on the link.<br/>
+    </p>
+</div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

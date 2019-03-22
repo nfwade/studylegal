@@ -1,0 +1,27 @@
+<!--login modal-->
+<div class="ui small modal" id="login-modal">
+  <div class="header">
+    Login
+  </div>
+  <div class="content">
+    <form action="/user/login" method="post" id="loginform">
+    <div class="ui left icon input fluid">
+      <input type="text" name="logemail" id="logemail" placeholder="Email" />
+      <i class="user icon"></i>
+    </div><br/>
+    <div class="ui left icon input fluid">
+      <input type="password" name="logp" id="logp" placeholder="Password" />
+      <i class="lock icon"></i>
+    </div><br/>
+    <div class="ui checkbox">
+      <input type="checkbox" name="rm" id="rm" />
+      <label>Remember me</label>
+    </div><br/>
+    <div style="text-align:right;margin-top:-22px;">
+      <a class="reset-btn">Forgot your password?</a>
+    </div>
+  </div>
+  <div class="actions">
+    <div class=""><input class="ui button green" type="submit" value="Login"/></form></div>
+  </div>
+</div>

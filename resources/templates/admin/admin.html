@@ -1,0 +1,45 @@
+{% include 'pages/inc/header.html' %}
+{% include 'admin/inc/admin-header.html' %}
+  <div class="sixteen wide column centered">
+    <div class="ui segment">
+      <h1 class="centered">{{page.name}} Study Legal</h1>
+      <table class="ui celled table">
+        <thead>
+          <tr><th>Type</th>
+          <th>Data</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>Total Students</td>
+            <td>{{admindata.totalusers}}</td>
+          </tr>
+          <tr>
+            <td>Active Pro Accounts</td>
+            <td>{{admindata.procount}}</td>
+          </tr>
+          <tr>
+            <td>Active Brief Count</td>
+            <td>{{admindata.briefcount}}</td>
+          </tr>
+          <tr>
+            <td>Current Export Count</td>
+            <td>{{admindata.exportcount}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+
+  <div class="sixteen wide column centered">
+    <div class="ui segment">
+      <h2>Update Site Functions</h2>
+      <div class="ui">
+        <a class="ui button" href="/apollo/minify/js" target="_blank">Minify JS</a>
+        <a class="ui button" href="/apollo/minify/css" target="_blank">Minify CSS</a>
+        <a class="ui button" href="/apollo/clear/exports" target="_blank">Clear Exports</a>
+        <a class="ui button" href="/apollo/update/parse" target="_blank">Update Case Parsing</a>
+      </div>
+  </div>
+</div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

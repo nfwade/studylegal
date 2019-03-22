@@ -1,0 +1,68 @@
+{% include 'app/inc/header.html' %}
+<div class="ui container sl-page-wrap" style="">
+	<div class="ui grid row">
+		<div class="four wide column" style="margin-top:14px;">
+			<form id="outline-content-type" style="margin:0px;">
+				<div class="ui fluid vertical menu">
+				  <a class="active item">
+				    Outline
+				  </a>
+				  <a class="item export-doc">
+				    Download .doc
+				    <i class="file word outline icon"></i>
+				  </a>
+				  <a class="item export-csv">
+				    Download .csv
+				    <i class="file excel outline icon"></i>
+				  </a>
+					<div class="item centered-text" >
+						<span class="clickable" id="brief-type-all"/><b> All</b></span> / <span class="clickable" id="brief-type-none"><b>None</b></span>
+					</div>
+				  <div class="item">
+						<div class="ui checkbox">
+						  <input class="brief-type" id="notes" type="checkbox" checked>
+						  <label>Notes</label>
+						</div>
+				  </div>
+					<div class="item">
+						<div class="ui checkbox">
+						  <input class="brief-type" id="facts" type="checkbox">
+						  <label>Facts</label>
+						</div>
+				  </div>
+					<div class="item">
+						<div class="ui checkbox">
+						  <input class="brief-type" id="issues" type="checkbox">
+						  <label>Issues</label>
+						</div>
+				  </div>
+					<div class="item">
+						<div class="ui checkbox">
+						  <input class="brief-type" id="rules" type="checkbox" checked>
+						  <label>Rules</label>
+						</div>
+				  </div>
+					<div class="item">
+						<div class="ui checkbox">
+						  <input class="brief-type" id="analysis" type="checkbox">
+						  <label>Analysis</label>
+						</div>
+				  </div>
+					<div class="item">
+						<div class="ui checkbox">
+						  <input class="brief-type" id="holding" type="checkbox">
+						  <label>Holding</label>
+						</div>
+				  </div>
+				</div>
+			</form>
+		</div>
+		<div class="twelve wide column"  style="margin-top:14px;">
+			<div class="ui segment">
+				<div class="sl-outline">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% include 'pages/inc/footer.html' %}

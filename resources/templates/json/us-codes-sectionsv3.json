@@ -1,0 +1,1609 @@
+[
+   {
+      "id":"6",
+      "type":"Code",
+      "status":"active",
+      "name":"Federal Rules of Civil Procedure",
+      "shortname":"F.R.C.P.",
+      "author":"",
+      "edition":"2015",
+      "isbn":"",
+      "citation":"",
+      "codes":{
+         "Title I - Scope of Rules Form of Action":[
+            {
+               "id":"992",
+               "idmaterial":"6",
+               "fullname":"Rule 1 - Scope and Purpose",
+               "shortname":"Rule 1 ",
+               "section":"Title I - Scope of Rules Form of Action",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-i\/rule-1\/"
+            },
+            {
+               "id":"993",
+               "idmaterial":"6",
+               "fullname":"Rule 2 - One Form of Action",
+               "shortname":"Rule 2 ",
+               "section":"Title I - Scope of Rules Form of Action",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-i\/rule-2\/"
+            }
+         ],
+         "Title II - Commencing an Action":[
+            {
+               "id":"994",
+               "idmaterial":"6",
+               "fullname":"Rule 3 - Commencing an Action",
+               "shortname":"Rule 3 ",
+               "section":"Title II - Commencing an Action",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ii\/rule-3-commencing-an-action\/"
+            },
+            {
+               "id":"995",
+               "idmaterial":"6",
+               "fullname":"Rule 4 - Summons",
+               "shortname":"Rule 4 ",
+               "section":"Title II - Commencing an Action",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ii\/rule-4-summons\/"
+            },
+            {
+               "id":"996",
+               "idmaterial":"6",
+               "fullname":"Rule 4.1 - Serving Other Process",
+               "shortname":"Rule 4.1 ",
+               "section":"Title II - Commencing an Action",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ii\/rule-4-1-serving-other-process\/"
+            },
+            {
+               "id":"997",
+               "idmaterial":"6",
+               "fullname":"Rule 5 - Serving and Filing Pleadings and Other Papers",
+               "shortname":"Rule 5 ",
+               "section":"Title II - Commencing an Action",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ii\/rule-5-serving-and-filing-pleadings-and-other-papers\/"
+            },
+            {
+               "id":"998",
+               "idmaterial":"6",
+               "fullname":"Rule 5.1 - Constitutional Challenge to a Statute",
+               "shortname":"Rule 5.1 ",
+               "section":"Title II - Commencing an Action",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ii\/rule-5-1-constitutional-challenge-to-a-statute\/"
+            },
+            {
+               "id":"999",
+               "idmaterial":"6",
+               "fullname":"Rule 5.2 - Privacy Protection for Filings Made with the Court",
+               "shortname":"Rule 5.2 ",
+               "section":"Title II - Commencing an Action",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ii\/rule-5-2-privacy-protection-for-filings-made-with-the-court\/"
+            },
+            {
+               "id":"1000",
+               "idmaterial":"6",
+               "fullname":"Rule 6 - Computing and Extending Time; Time for Motion Papers",
+               "shortname":"Rule 6 ",
+               "section":"Title II - Commencing an Action",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ii\/rule-6-computing-and-extending-time-time-for-motion-papers\/"
+            }
+         ],
+         "Title III - Pleadings and Motions":[
+            {
+               "id":"1001",
+               "idmaterial":"6",
+               "fullname":"Rule 7 - Pleadings Allowed; Form of Motions and Other Papers",
+               "shortname":"Rule 7 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-7-pleadings-allowed-form-of-motions-and-other-papers\/"
+            },
+            {
+               "id":"1002",
+               "idmaterial":"6",
+               "fullname":"Rule 7.1 - Disclosure Statement",
+               "shortname":"Rule 7.1 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-7-1-disclosure-statement\/"
+            },
+            {
+               "id":"1003",
+               "idmaterial":"6",
+               "fullname":"Rule 8 - General Rules of Pleading",
+               "shortname":"Rule 8 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-8-general-rules-of-pleading\/"
+            },
+            {
+               "id":"1004",
+               "idmaterial":"6",
+               "fullname":"Rule 9 - Pleading Special Matters",
+               "shortname":"Rule 9 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-9-pleading-special-matters\/"
+            },
+            {
+               "id":"1005",
+               "idmaterial":"6",
+               "fullname":"Rule 10 - Form of Pleadings",
+               "shortname":"Rule 10 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-10-form-of-pleadings\/"
+            },
+            {
+               "id":"1006",
+               "idmaterial":"6",
+               "fullname":"Rule 11 - Signing Pleadings, Motions, and Other Papers; Representations to the Court; Sanctions",
+               "shortname":"Rule 11 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-11-signing-pleadings-motions-and-other-papers-representations-to-the-court-sanctions\/"
+            },
+            {
+               "id":"1007",
+               "idmaterial":"6",
+               "fullname":"Rule 12 - Defenses and Objections: When and How Presented; Motion for Judgment on the Pleadings; Consolidating Motions; Waiving Defenses; Pretrial Hearing",
+               "shortname":"Rule 12 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-12-defenses-and-objections-when-and-how-presented-motion-for-judgment-on-the-pleadings-consolidating-motions-waiv"
+            },
+            {
+               "id":"1008",
+               "idmaterial":"6",
+               "fullname":"Rule 13 - Counterclaim and Crossclaim",
+               "shortname":"Rule 13 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-13-counterclaim-and-crossclaim\/"
+            },
+            {
+               "id":"1009",
+               "idmaterial":"6",
+               "fullname":"Rule 14 - Third-Party Practice",
+               "shortname":"Rule 14 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-14-third-party-practice\/"
+            },
+            {
+               "id":"1010",
+               "idmaterial":"6",
+               "fullname":"Rule 15 - Amended and Supplemental Pleadings",
+               "shortname":"Rule 15 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-15-amended-and-supplemental-pleadings\/"
+            },
+            {
+               "id":"1011",
+               "idmaterial":"6",
+               "fullname":"Rule 16 - Pretrial Conferences; Scheduling; Management",
+               "shortname":"Rule 16 ",
+               "section":"Title III - Pleadings and Motions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iii-pleadings-and-motions\/rule-16-pretrial-conferences-scheduling-management\/"
+            }
+         ],
+         "Title IV - Parties":[
+            {
+               "id":"1012",
+               "idmaterial":"6",
+               "fullname":"Rule 17 - Plaintiff and Defendant; Capacity; Public Officers",
+               "shortname":"Rule 17 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-17-plaintiff-and-defendant-capacity-public-officers\/"
+            },
+            {
+               "id":"1013",
+               "idmaterial":"6",
+               "fullname":"Rule 18 - Joinder of Claims",
+               "shortname":"Rule 18 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-18-joinder-of-claims\/"
+            },
+            {
+               "id":"1014",
+               "idmaterial":"6",
+               "fullname":"Rule 19 - Required Joinder of Parties",
+               "shortname":"Rule 19 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-19-required-joinder-of-parties\/"
+            },
+            {
+               "id":"1015",
+               "idmaterial":"6",
+               "fullname":"Rule 20 - Permissive Joinder of Parties",
+               "shortname":"Rule 20 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-20-permissive-joinder-of-parties\/"
+            },
+            {
+               "id":"1016",
+               "idmaterial":"6",
+               "fullname":"Rule 21 - Misjoinder and Nonjoinder of Parties",
+               "shortname":"Rule 21 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-21-misjoinder-and-nonjoinder-of-parties\/"
+            },
+            {
+               "id":"1017",
+               "idmaterial":"6",
+               "fullname":"Rule 22 - Interpleader",
+               "shortname":"Rule 22 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-22-interpleader\/"
+            },
+            {
+               "id":"1018",
+               "idmaterial":"6",
+               "fullname":"Rule 23 - Class Actions",
+               "shortname":"Rule 23 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-23-class-actions\/"
+            },
+            {
+               "id":"1019",
+               "idmaterial":"6",
+               "fullname":"Rule 23.1 - Derivative Actions",
+               "shortname":"Rule 23.1 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-23-1-derivative-actions\/"
+            },
+            {
+               "id":"1020",
+               "idmaterial":"6",
+               "fullname":"Rule 23.2 - Actions Relating to Unincorporated Associations",
+               "shortname":"Rule 23.2 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-23-2-actions-relating-to-unincorporated-associations\/"
+            },
+            {
+               "id":"1021",
+               "idmaterial":"6",
+               "fullname":"Rule 24 - Intervention",
+               "shortname":"Rule 24 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-24-intervention\/"
+            },
+            {
+               "id":"1022",
+               "idmaterial":"6",
+               "fullname":"Rule 25 - Substitution of Parties",
+               "shortname":"Rule 25 ",
+               "section":"Title IV - Parties",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-iv-parties\/rule-25-substitution-of-parties\/"
+            }
+         ],
+         "Title V - Disclosures and Discovery":[
+            {
+               "id":"1023",
+               "idmaterial":"6",
+               "fullname":"Rule 26 - Duty to Disclose; General Provisions Governing Discovery",
+               "shortname":"Rule 26 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-26-duty-to-disclose-general-provisions-governing-discovery\/"
+            },
+            {
+               "id":"1024",
+               "idmaterial":"6",
+               "fullname":"Rule 27 - Depositions to Perpetuate Testimony",
+               "shortname":"Rule 27 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-27-depositions-to-perpetuate-testimony\/"
+            },
+            {
+               "id":"1025",
+               "idmaterial":"6",
+               "fullname":"Rule 28 - Persons Before Whom Depositions May Be Taken",
+               "shortname":"Rule 28 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-28-persons-before-whom-depositions-may-be-taken\/"
+            },
+            {
+               "id":"1026",
+               "idmaterial":"6",
+               "fullname":"Rule 29 - Stipulations About Discovery Procedure",
+               "shortname":"Rule 29 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-29-stipulations-about-discovery-procedure\/"
+            },
+            {
+               "id":"1027",
+               "idmaterial":"6",
+               "fullname":"Rule 30 - Depositions by Oral Examination",
+               "shortname":"Rule 30 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-30-depositions-by-oral-examination\/"
+            },
+            {
+               "id":"1028",
+               "idmaterial":"6",
+               "fullname":"Rule 31 - Depositions by Written Questions",
+               "shortname":"Rule 31 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-31-depositions-by-written-questions\/"
+            },
+            {
+               "id":"1029",
+               "idmaterial":"6",
+               "fullname":"Rule 32 - Using Depositions in Court Proceedings",
+               "shortname":"Rule 32 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-32-using-depositions-in-court-proceedings\/"
+            },
+            {
+               "id":"1030",
+               "idmaterial":"6",
+               "fullname":"Rule 33 - Interrogatories to Parties",
+               "shortname":"Rule 33 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-33-interrogatories-to-parties\/"
+            },
+            {
+               "id":"1031",
+               "idmaterial":"6",
+               "fullname":"Rule 34 - Producing Documents, Electronically Stored Information, and Tangible Things, or Entering onto Land, for Inspection and Other Purposes",
+               "shortname":"Rule 34 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-34-producing-documents-electronically-stored-information-and-tangible-things-or-entering-onto-land-for-inspecti"
+            },
+            {
+               "id":"1032",
+               "idmaterial":"6",
+               "fullname":"Rule 35 - Physical and Mental Examinations",
+               "shortname":"Rule 35 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-35-physical-and-mental-examinations\/"
+            },
+            {
+               "id":"1033",
+               "idmaterial":"6",
+               "fullname":"Rule 36 - Requests for Admission",
+               "shortname":"Rule 36 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-36-requests-for-admission\/"
+            },
+            {
+               "id":"1034",
+               "idmaterial":"6",
+               "fullname":"Rule 37 - Failure to Make Disclosures or to Cooperate in Discovery; Sanctions",
+               "shortname":"Rule 37 ",
+               "section":"Title V - Disclosures and Discovery",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-v-disclosures-and-discovery\/rule-37-failure-to-make-disclosures-or-to-cooperate-in-discovery-sanctions\/"
+            }
+         ],
+         "Title VI - Trials":[
+            {
+               "id":"1035",
+               "idmaterial":"6",
+               "fullname":"Rule 38 - Right to a Jury Trial; Demand",
+               "shortname":"Rule 38 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-38-right-to-a-jury-trial-demand\/"
+            },
+            {
+               "id":"1036",
+               "idmaterial":"6",
+               "fullname":"Rule 39 - Trial by Jury or by the Court",
+               "shortname":"Rule 39 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-39-trial-by-jury-or-by-the-court\/"
+            },
+            {
+               "id":"1037",
+               "idmaterial":"6",
+               "fullname":"Rule 40 - Scheduling Cases for Trial",
+               "shortname":"Rule 40 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-40-scheduling-cases-for-trial\/"
+            },
+            {
+               "id":"1038",
+               "idmaterial":"6",
+               "fullname":"Rule 41 - Dismissal of Actions",
+               "shortname":"Rule 41 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-41-dismissal-of-actions\/"
+            },
+            {
+               "id":"1039",
+               "idmaterial":"6",
+               "fullname":"Rule 42 - Consolidation; Separate Trials",
+               "shortname":"Rule 42 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-42-consolidation-separate-trials\/"
+            },
+            {
+               "id":"1040",
+               "idmaterial":"6",
+               "fullname":"Rule 43 - Taking Testimony",
+               "shortname":"Rule 43 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-43-taking-testimony\/"
+            },
+            {
+               "id":"1041",
+               "idmaterial":"6",
+               "fullname":"Rule 44 - Proving an Official Record",
+               "shortname":"Rule 44 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-44-proving-an-official-record\/"
+            },
+            {
+               "id":"1042",
+               "idmaterial":"6",
+               "fullname":"Rule 44.1 - Determining Foreign Law",
+               "shortname":"Rule 44.1 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-44-1-determining-foreign-law\/"
+            },
+            {
+               "id":"1043",
+               "idmaterial":"6",
+               "fullname":"Rule 45 - Subpoena",
+               "shortname":"Rule 45 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-45-subpoena\/"
+            },
+            {
+               "id":"1044",
+               "idmaterial":"6",
+               "fullname":"Rule 46 - Objecting to a Ruling or Order",
+               "shortname":"Rule 46 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-46-objecting-to-a-ruling-or-order\/"
+            },
+            {
+               "id":"1045",
+               "idmaterial":"6",
+               "fullname":"Rule 47 - Selecting Jurors",
+               "shortname":"Rule 47 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-47-selecting-jurors\/"
+            },
+            {
+               "id":"1046",
+               "idmaterial":"6",
+               "fullname":"Rule 48 - Number of Jurors; Verdict; Polling",
+               "shortname":"Rule 48 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-48-number-of-jurors-verdict-polling\/"
+            },
+            {
+               "id":"1047",
+               "idmaterial":"6",
+               "fullname":"Rule 49 - Special Verdict; General Verdict and Questions",
+               "shortname":"Rule 49 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-49-special-verdict-general-verdict-and-questions\/"
+            },
+            {
+               "id":"1048",
+               "idmaterial":"6",
+               "fullname":"Rule 50 - Judgment as a Matter of Law in a Jury Trial; Related Motion for a New Trial; Conditional Ruling",
+               "shortname":"Rule 50 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-50-judgment-as-a-matter-of-law-in-a-jury-trial-related-motion-for-a-new-trial-conditional-ruling\/"
+            },
+            {
+               "id":"1049",
+               "idmaterial":"6",
+               "fullname":"Rule 51 - Instructions to the Jury; Objections; Preserving a Claim of Error",
+               "shortname":"Rule 51 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-51-instructions-to-the-jury-objections-preserving-a-claim-of-error\/"
+            },
+            {
+               "id":"1050",
+               "idmaterial":"6",
+               "fullname":"Rule 52 - Findings and Conclusions by the Court; Judgment on Partial Findings",
+               "shortname":"Rule 52 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-52-findings-and-conclusions-by-the-court-judgment-on-partial-findings\/"
+            },
+            {
+               "id":"1051",
+               "idmaterial":"6",
+               "fullname":"Rule 53 - Masters",
+               "shortname":"Rule 53 ",
+               "section":"Title VI - Trials",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vi-trials\/rule-53-masters\/"
+            }
+         ],
+         "Title VII - Judgment":[
+            {
+               "id":"1052",
+               "idmaterial":"6",
+               "fullname":"Rule 54 - Judgment; Costs",
+               "shortname":"Rule 54 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-54-judgment-costs\/"
+            },
+            {
+               "id":"1053",
+               "idmaterial":"6",
+               "fullname":"Rule 55 - Default; Default Judgment",
+               "shortname":"Rule 55 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-55-default-default-judgment\/"
+            },
+            {
+               "id":"1054",
+               "idmaterial":"6",
+               "fullname":"Rule 56 - Summary Judgment",
+               "shortname":"Rule 56 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-56-summary-judgment\/"
+            },
+            {
+               "id":"1055",
+               "idmaterial":"6",
+               "fullname":"Rule 57 - Declaratory Judgment",
+               "shortname":"Rule 57 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-57-declaratory-judgment\/"
+            },
+            {
+               "id":"1056",
+               "idmaterial":"6",
+               "fullname":"Rule 58 - Entering Judgment",
+               "shortname":"Rule 58 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-58-entering-judgment\/"
+            },
+            {
+               "id":"1057",
+               "idmaterial":"6",
+               "fullname":"Rule 59 - New Trial; Altering or Amending a Judgment",
+               "shortname":"Rule 59 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-59-new-trial-altering-or-amending-a-judgment\/"
+            },
+            {
+               "id":"1058",
+               "idmaterial":"6",
+               "fullname":"Rule 60 - Relief from a Judgment or Order",
+               "shortname":"Rule 60 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-60-relief-from-a-judgment-or-order\/"
+            },
+            {
+               "id":"1059",
+               "idmaterial":"6",
+               "fullname":"Rule 61 - Harmless Error",
+               "shortname":"Rule 61 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-61-harmless-error\/"
+            },
+            {
+               "id":"1060",
+               "idmaterial":"6",
+               "fullname":"Rule 62 - Stay of Proceedings to Enforce a Judgment",
+               "shortname":"Rule 62 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-62-stay-of-proceedings-to-enforce-a-judgment\/"
+            },
+            {
+               "id":"1061",
+               "idmaterial":"6",
+               "fullname":"Rule 62.1 - Indicative Ruling on a Motion for Relief That is Barred by a Pending Appeal",
+               "shortname":"Rule 62.1 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-62-1-indicative-ruling-on-a-motion-for-relief-that-is-barred-by-a-pending-appeal\/"
+            },
+            {
+               "id":"1062",
+               "idmaterial":"6",
+               "fullname":"Rule 63 - Judge’s Inability to Proceed",
+               "shortname":"Rule 63 ",
+               "section":"Title VII - Judgment",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-vii-judgment\/rule-63-judges-inability-to-proceed\/"
+            }
+         ],
+         "Title VIII - Provisional and Final":[
+            {
+               "id":"1063",
+               "idmaterial":"6",
+               "fullname":"Rule 64 - Seizing a Person or Property",
+               "shortname":"Rule 64 ",
+               "section":"Title VIII - Provisional and Final",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-viii-provisional-and-final-remedies\/rule-64-seizing-a-person-or-property\/"
+            },
+            {
+               "id":"1064",
+               "idmaterial":"6",
+               "fullname":"Rule 65 - Injunctions and Restraining Orders",
+               "shortname":"Rule 65 ",
+               "section":"Title VIII - Provisional and Final",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-viii-provisional-and-final-remedies\/rule-65-injunctions-and-restraining-orders\/"
+            },
+            {
+               "id":"1065",
+               "idmaterial":"6",
+               "fullname":"Rule 65.1 - Proceedings Against a Surety",
+               "shortname":"Rule 65.1 ",
+               "section":"Title VIII - Provisional and Final",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-viii-provisional-and-final-remedies\/rule-65-1-proceedings-against-a-surety\/"
+            },
+            {
+               "id":"1066",
+               "idmaterial":"6",
+               "fullname":"Rule 66 - Receivers",
+               "shortname":"Rule 66 ",
+               "section":"Title VIII - Provisional and Final",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-viii-provisional-and-final-remedies\/rule-66-receivers\/"
+            },
+            {
+               "id":"1067",
+               "idmaterial":"6",
+               "fullname":"Rule 67 - Deposit into Court",
+               "shortname":"Rule 67 ",
+               "section":"Title VIII - Provisional and Final",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-viii-provisional-and-final-remedies\/rule-67-deposit-into-court\/"
+            },
+            {
+               "id":"1068",
+               "idmaterial":"6",
+               "fullname":"Rule 68 - Offer of Judgment",
+               "shortname":"Rule 68 ",
+               "section":"Title VIII - Provisional and Final",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-viii-provisional-and-final-remedies\/rule-68-offer-of-judgment\/"
+            },
+            {
+               "id":"1069",
+               "idmaterial":"6",
+               "fullname":"Rule 69 - Execution",
+               "shortname":"Rule 69 ",
+               "section":"Title VIII - Provisional and Final",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-viii-provisional-and-final-remedies\/rule-69-execution\/"
+            },
+            {
+               "id":"1070",
+               "idmaterial":"6",
+               "fullname":"Rule 70 - Enforcing a Judgment for a Specific Act",
+               "shortname":"Rule 70 ",
+               "section":"Title VIII - Provisional and Final",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-viii-provisional-and-final-remedies\/rule-70-enforcing-a-judgment-for-a-specific-act\/"
+            },
+            {
+               "id":"1071",
+               "idmaterial":"6",
+               "fullname":"Rule 71 - Enforcing Relief For or Against a Nonparty",
+               "shortname":"Rule 71 ",
+               "section":"Title VIII - Provisional and Final",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-viii-provisional-and-final-remedies\/rule-71-enforcing-relief-for-or-against-a-nonparty\/"
+            }
+         ],
+         "Title IX - Special Proceedings":[
+            {
+               "id":"1072",
+               "idmaterial":"6",
+               "fullname":"Rule 71.1 - Condemning Real or Personal Property",
+               "shortname":"Rule 71.1 ",
+               "section":"Title IX - Special Proceedings",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ix-special-proceedings\/rule-71-1-condemning-real-or-personal-property\/"
+            },
+            {
+               "id":"1073",
+               "idmaterial":"6",
+               "fullname":"Rule 72 - Magistrate Judges: Pretrial Order",
+               "shortname":"Rule 72 ",
+               "section":"Title IX - Special Proceedings",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ix-special-proceedings\/rule-72-magistrate-judges-pretrial-order\/"
+            },
+            {
+               "id":"1074",
+               "idmaterial":"6",
+               "fullname":"Rule 73 - Magistrate Judges: Trial by Consent; Appeal",
+               "shortname":"Rule 73 ",
+               "section":"Title IX - Special Proceedings",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-ix-special-proceedings\/rule-73-magistrate-judges-trial-by-consent-appeal\/"
+            }
+         ],
+         "Title X - District Courts and Clerks":[
+            {
+               "id":"1075",
+               "idmaterial":"6",
+               "fullname":"Rule 77 - Conducting Business; Clerk’s Authority; Notice of an Order or Judgment",
+               "shortname":"Rule 77 ",
+               "section":"Title X - District Courts and Clerks",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-x-district-courts-and-clerks-conducting-busines-issuing-orders\/rule-77-conducting-business-clerks-authority-notice-of-an-order-or-judgment\/"
+            },
+            {
+               "id":"1076",
+               "idmaterial":"6",
+               "fullname":"Rule 78 - Hearing Motions; Submission on Briefs",
+               "shortname":"Rule 78 ",
+               "section":"Title X - District Courts and Clerks",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-x-district-courts-and-clerks-conducting-busines-issuing-orders\/rule-78-hearing-motions-submission-on-briefs\/"
+            },
+            {
+               "id":"1077",
+               "idmaterial":"6",
+               "fullname":"Rule 79 - Records Kept by the Clerk",
+               "shortname":"Rule 79 ",
+               "section":"Title X - District Courts and Clerks",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-x-district-courts-and-clerks-conducting-busines-issuing-orders\/rule-79-records-kept-by-the-clerk\/"
+            },
+            {
+               "id":"1078",
+               "idmaterial":"6",
+               "fullname":"Rule 80 - Stenographic Transcript as Evidence",
+               "shortname":"Rule 80 ",
+               "section":"Title X - District Courts and Clerks",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-x-district-courts-and-clerks-conducting-busines-issuing-orders\/rule-80-stenographic-transcript-as-evidence\/"
+            }
+         ],
+         "Title XI - General Provisions":[
+            {
+               "id":"1079",
+               "idmaterial":"6",
+               "fullname":"Rule 81 - Applicability of the Rules in General; Removed Actions",
+               "shortname":"Rule 81 ",
+               "section":"Title XI - General Provisions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xi-general-provisions\/rule-81-applicability-of-the-rules-in-general-removed-actions\/"
+            },
+            {
+               "id":"1080",
+               "idmaterial":"6",
+               "fullname":"Rule 82 - Jurisdiction and Venue Unaffected",
+               "shortname":"Rule 82 ",
+               "section":"Title XI - General Provisions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xi-general-provisions\/rule-82-jurisdiction-and-venue-unaffected\/"
+            },
+            {
+               "id":"1081",
+               "idmaterial":"6",
+               "fullname":"Rule 83 - Rules by District Courts; Judge’s Directives",
+               "shortname":"Rule 83 ",
+               "section":"Title XI - General Provisions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xi-general-provisions\/rule-83-rules-by-district-courts-judges-directives\/"
+            },
+            {
+               "id":"1082",
+               "idmaterial":"6",
+               "fullname":"Rule 84 - Forms [Abrogated]",
+               "shortname":"Rule 84 ",
+               "section":"Title XI - General Provisions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xi-general-provisions\/rule-84-forms\/"
+            },
+            {
+               "id":"1083",
+               "idmaterial":"6",
+               "fullname":"Rule 85 - Title",
+               "shortname":"Rule 85 ",
+               "section":"Title XI - General Provisions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xi-general-provisions\/rule-85-title\/"
+            },
+            {
+               "id":"1084",
+               "idmaterial":"6",
+               "fullname":"Rule 86 - Effective Dates",
+               "shortname":"Rule 86 ",
+               "section":"Title XI - General Provisions",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xi-general-provisions\/rule-86-effective-dates\/"
+            }
+         ],
+         "Title XIII - Supplemental Rules ":[
+            {
+               "id":"1085",
+               "idmaterial":"6",
+               "fullname":"Rule A - Scope of Rules",
+               "shortname":"Rule A ",
+               "section":"Title XIII - Supplemental Rules ",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xiii\/rule-a-scope-of-rules\/"
+            },
+            {
+               "id":"1086",
+               "idmaterial":"6",
+               "fullname":"Rule B - In Personam Actions: Attachment and Garnishment",
+               "shortname":"Rule B ",
+               "section":"Title XIII - Supplemental Rules ",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xiii\/rule-b-in-personam-actions-attachment-and-garnishment\/"
+            },
+            {
+               "id":"1087",
+               "idmaterial":"6",
+               "fullname":"Rule C - In Rem Actions: Special Provisions",
+               "shortname":"Rule C ",
+               "section":"Title XIII - Supplemental Rules ",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xiii\/rule-c-in-rem-actions-special-provisions\/"
+            },
+            {
+               "id":"1088",
+               "idmaterial":"6",
+               "fullname":"Rule D - Possessory, Petitory, and Partition Actions",
+               "shortname":"Rule D ",
+               "section":"Title XIII - Supplemental Rules ",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xiii\/rule-d-possessory-petitory-and-partition-actions\/"
+            },
+            {
+               "id":"1089",
+               "idmaterial":"6",
+               "fullname":"Rule E - Actions in Rem and Quasi in Rem: General Provisions",
+               "shortname":"Rule E ",
+               "section":"Title XIII - Supplemental Rules ",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xiii\/rule-e-actions-in-rem-and-quasi-in-rem-general-provisions\/"
+            },
+            {
+               "id":"1090",
+               "idmaterial":"6",
+               "fullname":"Rule F - Limitation of Liability",
+               "shortname":"Rule F ",
+               "section":"Title XIII - Supplemental Rules ",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xiii\/rule-f-limitation-of-liability\/"
+            },
+            {
+               "id":"1091",
+               "idmaterial":"6",
+               "fullname":"Rule G - Forfeiture Actions in Rem",
+               "shortname":"Rule G ",
+               "section":"Title XIII - Supplemental Rules ",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcivilprocedure.org\/frcp\/title-xiii\/rule-g-forfeiture-actions-in-rem\/"
+            }
+         ]
+      }
+   },
+   {
+      "id":"7",
+      "type":"Code",
+      "status":"active",
+      "name":"Federal Rules of Criminal Procedure",
+      "shortname":"F.R.Crm.P.",
+      "author":"",
+      "edition":"",
+      "isbn":"",
+      "citation":"",
+      "codes":{
+         "TITLE I. APPLICABILITY":[
+            {
+               "id":"1092",
+               "idmaterial":"7",
+               "fullname":"Rule 1. Scope; Definitions",
+               "shortname":"Rule 1",
+               "section":"TITLE I. APPLICABILITY",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-i\/rule-1\/"
+            },
+            {
+               "id":"1093",
+               "idmaterial":"7",
+               "fullname":"Rule 2. Interpretation",
+               "shortname":"Rule 2",
+               "section":"TITLE I. APPLICABILITY",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-i\/rule-2\/"
+            }
+         ],
+         "TITLE II. PRELIMINARY PROCEEDINGS":[
+            {
+               "id":"1094",
+               "idmaterial":"7",
+               "fullname":"Rule 3. The Complaint",
+               "shortname":"Rule 3",
+               "section":"TITLE II. PRELIMINARY PROCEEDINGS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ii\/rule-3\/"
+            },
+            {
+               "id":"1095",
+               "idmaterial":"7",
+               "fullname":"Rule 4. Arrest Warrant or Summons on a Complaint",
+               "shortname":"Rule 4",
+               "section":"TITLE II. PRELIMINARY PROCEEDINGS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ii\/rule-4\/"
+            },
+            {
+               "id":"1096",
+               "idmaterial":"7",
+               "fullname":"Rule 4.1 Complaint, Warrant, or Summons by Telephone or Other Reliable Electronic Means",
+               "shortname":"Rule 4",
+               "section":"TITLE II. PRELIMINARY PROCEEDINGS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ii\/rule-4-1\/"
+            },
+            {
+               "id":"1097",
+               "idmaterial":"7",
+               "fullname":"Rule 5. Initial Appearance",
+               "shortname":"Rule 5",
+               "section":"TITLE II. PRELIMINARY PROCEEDINGS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ii\/rule-5\/"
+            },
+            {
+               "id":"1098",
+               "idmaterial":"7",
+               "fullname":"Rule 5.1. Preliminary Hearing",
+               "shortname":"Rule 5.1",
+               "section":"TITLE II. PRELIMINARY PROCEEDINGS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ii\/rule-5-1\/"
+            }
+         ],
+         "TITLE III. THE GRAND JURY, THE INDICTMENT, AND THE INFORMATION":[
+            {
+               "id":"1099",
+               "idmaterial":"7",
+               "fullname":"Rule 6. The Grand Jury",
+               "shortname":"Rule 6",
+               "section":"TITLE III. THE GRAND JURY, THE INDICTMENT, AND THE INFORMATION",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iii\/rule-6-the-grand-jury\/"
+            },
+            {
+               "id":"1100",
+               "idmaterial":"7",
+               "fullname":"Rule 7. The Indictment and the Information",
+               "shortname":"Rule 7",
+               "section":"TITLE III. THE GRAND JURY, THE INDICTMENT, AND THE INFORMATION",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iii\/rule-7-the-indictment-and-the-information\/"
+            },
+            {
+               "id":"1101",
+               "idmaterial":"7",
+               "fullname":"Rule 8. Joinder of Offenses or Defendants",
+               "shortname":"Rule 8",
+               "section":"TITLE III. THE GRAND JURY, THE INDICTMENT, AND THE INFORMATION",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iii\/rule-8-joinder-of-offenses-or-defendants\/"
+            },
+            {
+               "id":"1102",
+               "idmaterial":"7",
+               "fullname":"Rule 9. Arrest Warrant or Summons on an Indictment or Information",
+               "shortname":"Rule 9",
+               "section":"TITLE III. THE GRAND JURY, THE INDICTMENT, AND THE INFORMATION",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iii\/rule-9-arrest-warrant-or-summons-on-an-indictment-or-information\/"
+            }
+         ],
+         "TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL":[
+            {
+               "id":"1103",
+               "idmaterial":"7",
+               "fullname":"Rule 10. Arraignment",
+               "shortname":"Rule 10",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-10-arraignment\/"
+            },
+            {
+               "id":"1104",
+               "idmaterial":"7",
+               "fullname":"Rule 11. Pleas",
+               "shortname":"Rule 11",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-11-pleas\/"
+            },
+            {
+               "id":"1105",
+               "idmaterial":"7",
+               "fullname":"Rule 12. Pleadings and Pretrial Motions",
+               "shortname":"Rule 12",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-12-pleadings-and-pretrial-motions\/"
+            },
+            {
+               "id":"1106",
+               "idmaterial":"7",
+               "fullname":"Rule 12.1. Notice of an Alibi Defense",
+               "shortname":"Rule 12.1",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-12-1-notice-of-an-alibi-defense\/"
+            },
+            {
+               "id":"1107",
+               "idmaterial":"7",
+               "fullname":"Rule 12.2. Notice of an Insanity Defense; Mental Examination",
+               "shortname":"Rule 12.2",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-12-2-notice-of-an-insanity-defense-mental-examination\/"
+            },
+            {
+               "id":"1108",
+               "idmaterial":"7",
+               "fullname":"Rule 12.3. Notice of a Public-Authority Defense",
+               "shortname":"Rule 12.3",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-12-3-notice-of-a-public-authority-defense\/"
+            },
+            {
+               "id":"1109",
+               "idmaterial":"7",
+               "fullname":"Rule 12.4. Disclosure Statement",
+               "shortname":"Rule 12.4",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-12-4-disclosure-statement\/"
+            },
+            {
+               "id":"1110",
+               "idmaterial":"7",
+               "fullname":"Rule 13. Joint Trial of Separate Cases",
+               "shortname":"Rule 13",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-13-joint-trial-of-separate-cases\/"
+            },
+            {
+               "id":"1111",
+               "idmaterial":"7",
+               "fullname":"Rule 14. Relief from Prejudicial Joinder",
+               "shortname":"Rule 14",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-14-relief-from-prejudicial-joinder\/"
+            },
+            {
+               "id":"1112",
+               "idmaterial":"7",
+               "fullname":"Rule 15. Depositions",
+               "shortname":"Rule 15",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-15-depositions\/"
+            },
+            {
+               "id":"1113",
+               "idmaterial":"7",
+               "fullname":"Rule 16. Discovery and Inspection",
+               "shortname":"Rule 16",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-16-discovery-and-inspection\/"
+            },
+            {
+               "id":"1114",
+               "idmaterial":"7",
+               "fullname":"Rule 17. Subpoena",
+               "shortname":"Rule 17",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-17-subpoena\/"
+            },
+            {
+               "id":"1115",
+               "idmaterial":"7",
+               "fullname":"Rule 17.1. Pretrial Conference",
+               "shortname":"Rule 17.1",
+               "section":"TITLE IV. ARRAIGNMENT AND PREPARATION FOR TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-iv\/rule-17-1-pretrial-conference\/"
+            }
+         ],
+         "TITLE V. VENUE":[
+            {
+               "id":"1116",
+               "idmaterial":"7",
+               "fullname":"Rule 18. Place of Prosecution and Trial",
+               "shortname":"Rule 18",
+               "section":"TITLE V. VENUE",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-v\/rule-18-place-of-prosecution-and-trial\/"
+            },
+            {
+               "id":"1117",
+               "idmaterial":"7",
+               "fullname":"Rule 20. Transfer for Plea and Sentence",
+               "shortname":"Rule 20",
+               "section":"TITLE V. VENUE",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-v\/rule-20-transfer-for-plea-and-sentence\/"
+            },
+            {
+               "id":"1118",
+               "idmaterial":"7",
+               "fullname":"Rule 21. Transfer for Trial",
+               "shortname":"Rule 21",
+               "section":"TITLE V. VENUE",
+               "date":"2015",
+               "source":"http:\/\/www.federalrulesofcriminalprocedure.org\/title-v\/rule-21-transfer-for-trial\/"
+            }
+         ],
+         "TITLE VI. TRIAL":[
+            {
+               "id":"1119",
+               "idmaterial":"7",
+               "fullname":"Rule 23. Jury or Nonjury Trial",
+               "shortname":"Rule 23",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-23-jury-or-nonjury-trial\/"
+            },
+            {
+               "id":"1120",
+               "idmaterial":"7",
+               "fullname":"Rule 24. Trial Jurors",
+               "shortname":"Rule 24",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-24-trial-jurors\/"
+            },
+            {
+               "id":"1121",
+               "idmaterial":"7",
+               "fullname":"Rule 25. Judge’s Disability",
+               "shortname":"Rule 25",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-25-judges-disability\/"
+            },
+            {
+               "id":"1122",
+               "idmaterial":"7",
+               "fullname":"Rule 26. Taking Testimony",
+               "shortname":"Rule 26",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-26-taking-testimony\/"
+            },
+            {
+               "id":"1123",
+               "idmaterial":"7",
+               "fullname":"Rule 26.1. Foreign Law Determination",
+               "shortname":"Rule 26.1",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-26-1-foreign-law-determination\/"
+            },
+            {
+               "id":"1124",
+               "idmaterial":"7",
+               "fullname":"Rule 26.2. Producing a Witness’s Statement",
+               "shortname":"Rule 26.2",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-26-2-producing-a-witnesss-statement\/"
+            },
+            {
+               "id":"1125",
+               "idmaterial":"7",
+               "fullname":"Rule 26.3. Mistrial",
+               "shortname":"Rule 26.3",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-26-3-mistrial\/"
+            },
+            {
+               "id":"1126",
+               "idmaterial":"7",
+               "fullname":"Rule 27. Proving an Official Record",
+               "shortname":"Rule 27",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-27-proving-an-official-record\/"
+            },
+            {
+               "id":"1127",
+               "idmaterial":"7",
+               "fullname":"Rule 28. Interpreters",
+               "shortname":"Rule 28",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-28-interpreters\/"
+            },
+            {
+               "id":"1128",
+               "idmaterial":"7",
+               "fullname":"Rule 29. Motion for a Judgment of Acquittal",
+               "shortname":"Rule 29",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-29-motion-for-a-judgment-of-acquittal\/"
+            },
+            {
+               "id":"1129",
+               "idmaterial":"7",
+               "fullname":"Rule 29.1. Closing Argument",
+               "shortname":"Rule 29.1",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-29-1-closing-argument\/"
+            },
+            {
+               "id":"1130",
+               "idmaterial":"7",
+               "fullname":"Rule 30. Jury Instructions",
+               "shortname":"Rule 30",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-30-jury-instructions\/"
+            },
+            {
+               "id":"1131",
+               "idmaterial":"7",
+               "fullname":"Rule 31. Jury Verdict",
+               "shortname":"Rule 31",
+               "section":"TITLE VI. TRIAL",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vi-trial\/rule-31-jury-verdict\/"
+            }
+         ],
+         "TITLE VII. POST-CONVICTION PROCEDURES":[
+            {
+               "id":"1132",
+               "idmaterial":"7",
+               "fullname":"Rule 32. Sentencing and Judgment",
+               "shortname":"Rule 32",
+               "section":"TITLE VII. POST-CONVICTION PROCEDURES",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vii\/rule-32-sentencing-and-judgment\/"
+            },
+            {
+               "id":"1133",
+               "idmaterial":"7",
+               "fullname":"Rule 32.1. Revoking or Modifying Probation or Supervised Release",
+               "shortname":"Rule 32.1",
+               "section":"TITLE VII. POST-CONVICTION PROCEDURES",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vii\/rule-32-1-revoking-or-modifying-probation-or-supervised-release\/"
+            },
+            {
+               "id":"1134",
+               "idmaterial":"7",
+               "fullname":"Rule 32.2. Criminal Forfeiture",
+               "shortname":"Rule 32.2",
+               "section":"TITLE VII. POST-CONVICTION PROCEDURES",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vii\/rule-32-2-criminal-forfeiture\/"
+            },
+            {
+               "id":"1135",
+               "idmaterial":"7",
+               "fullname":"Rule 33. New Trial",
+               "shortname":"Rule 33",
+               "section":"TITLE VII. POST-CONVICTION PROCEDURES",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vii\/rule-33-new-trial\/"
+            },
+            {
+               "id":"1136",
+               "idmaterial":"7",
+               "fullname":"Rule 34. Arresting Judgment",
+               "shortname":"Rule 34",
+               "section":"TITLE VII. POST-CONVICTION PROCEDURES",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vii\/rule-34-arresting-judgment\/"
+            },
+            {
+               "id":"1137",
+               "idmaterial":"7",
+               "fullname":"Rule 35. Correcting or Reducing a Sentence",
+               "shortname":"Rule 35",
+               "section":"TITLE VII. POST-CONVICTION PROCEDURES",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vii\/rule-35-correcting-or-reducing-a-sentence\/"
+            },
+            {
+               "id":"1138",
+               "idmaterial":"7",
+               "fullname":"Rule 36. Clerical Error",
+               "shortname":"Rule 36",
+               "section":"TITLE VII. POST-CONVICTION PROCEDURES",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vii\/rule-36-clerical-error\/"
+            },
+            {
+               "id":"1139",
+               "idmaterial":"7",
+               "fullname":"Rule 37. Indicative Ruling on a Motion for Relief That Is Barred by a Pending Appeal",
+               "shortname":"Rule 37",
+               "section":"TITLE VII. POST-CONVICTION PROCEDURES",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vii\/rule-37-indicative-ruling-on-a-motion-for-relief-that-is-barred-by-a-pending-appeal\/"
+            },
+            {
+               "id":"1140",
+               "idmaterial":"7",
+               "fullname":"Rule 38. Staying a Sentence or a Disability",
+               "shortname":"Rule 38",
+               "section":"TITLE VII. POST-CONVICTION PROCEDURES",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-vii\/rule-38-staying-a-sentence-or-a-disability\/"
+            }
+         ],
+         "TITLE VIII. SUPPLEMENTARY AND SPECIAL PROCEEDINGS":[
+            {
+               "id":"1141",
+               "idmaterial":"7",
+               "fullname":"Rule 40. Arrest for Failing to Appear in Another District or for Violating Conditions of Release Set in Another District",
+               "shortname":"Rule 40",
+               "section":"TITLE VIII. SUPPLEMENTARY AND SPECIAL PROCEEDINGS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-viii\/rule-40-arrest-for-failing-to-appear-in-another-district-or-for-violating-conditions-of-release-set-in-another-district\/"
+            },
+            {
+               "id":"1142",
+               "idmaterial":"7",
+               "fullname":"Rule 41. Search and Seizure",
+               "shortname":"Rule 41",
+               "section":"TITLE VIII. SUPPLEMENTARY AND SPECIAL PROCEEDINGS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-viii\/rule-41-search-and-seizure\/"
+            },
+            {
+               "id":"1143",
+               "idmaterial":"7",
+               "fullname":"Rule 42. Criminal Contempt",
+               "shortname":"Rule 42",
+               "section":"TITLE VIII. SUPPLEMENTARY AND SPECIAL PROCEEDINGS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-viii\/rule-42-criminal-contempt\/"
+            }
+         ],
+         "TITLE IX. GENERAL PROVISIONS":[
+            {
+               "id":"1144",
+               "idmaterial":"7",
+               "fullname":"Rule 43. Defendant’s Presence",
+               "shortname":"Rule 43",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-43-defendants-presence\/"
+            },
+            {
+               "id":"1145",
+               "idmaterial":"7",
+               "fullname":"Rule 44. Right to and Appointment of Counsel",
+               "shortname":"Rule 44",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-44-right-to-and-appointment-of-counsel\/"
+            },
+            {
+               "id":"1146",
+               "idmaterial":"7",
+               "fullname":"Rule 45. Computing and Extending Time",
+               "shortname":"Rule 45",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-45-computing-and-extending-time\/"
+            },
+            {
+               "id":"1147",
+               "idmaterial":"7",
+               "fullname":"Rule 46. Release from Custody; Supervising Detention",
+               "shortname":"Rule 46",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-46-release-from-custody-supervising-detention\/"
+            },
+            {
+               "id":"1148",
+               "idmaterial":"7",
+               "fullname":"Rule 47. Motions and Supporting Affidavits",
+               "shortname":"Rule 47",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-47-motions-and-supporting-affidavits\/"
+            },
+            {
+               "id":"1149",
+               "idmaterial":"7",
+               "fullname":"Rule 48. Dismissal",
+               "shortname":"Rule 48",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-48-dismissal\/"
+            },
+            {
+               "id":"1150",
+               "idmaterial":"7",
+               "fullname":"Rule 49. Serving and Filing Papers",
+               "shortname":"Rule 49",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-49-serving-and-filing-papers\/"
+            },
+            {
+               "id":"1151",
+               "idmaterial":"7",
+               "fullname":"Rule 49.1. Privacy Protection For Filings Made with the Court",
+               "shortname":"Rule 49.1",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-49-1-privacy-protection-for-filings-made-with-the-court\/"
+            },
+            {
+               "id":"1152",
+               "idmaterial":"7",
+               "fullname":"Rule 50. Prompt Disposition",
+               "shortname":"Rule 50",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-50-prompt-disposition\/"
+            },
+            {
+               "id":"1153",
+               "idmaterial":"7",
+               "fullname":"Rule 51. Preserving Claimed Error",
+               "shortname":"Rule 51",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-51-preserving-claimed-error\/"
+            },
+            {
+               "id":"1154",
+               "idmaterial":"7",
+               "fullname":"Rule 52. Harmless and Plain Error",
+               "shortname":"Rule 52",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-52-harmless-and-plain-error\/"
+            },
+            {
+               "id":"1155",
+               "idmaterial":"7",
+               "fullname":"Rule 53. Courtroom Photographing and Broadcasting Prohibited",
+               "shortname":"Rule 53",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-53-courtroom-photographing-and-broadcasting-prohibited\/"
+            },
+            {
+               "id":"1156",
+               "idmaterial":"7",
+               "fullname":"Rule 55. Records",
+               "shortname":"Rule 55",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-55-records\/"
+            },
+            {
+               "id":"1157",
+               "idmaterial":"7",
+               "fullname":"Rule 56. When Court Is Open",
+               "shortname":"Rule 56",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-56-when-court-is-open\/"
+            },
+            {
+               "id":"1158",
+               "idmaterial":"7",
+               "fullname":"Rule 57. District Court Rules",
+               "shortname":"Rule 57",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-57-district-court-rules\/"
+            },
+            {
+               "id":"1159",
+               "idmaterial":"7",
+               "fullname":"Rule 58. Petty Offenses and Other Misdemeanors",
+               "shortname":"Rule 58",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-58-petty-offenses-and-other-misdemeanors\/"
+            },
+            {
+               "id":"1160",
+               "idmaterial":"7",
+               "fullname":"Rule 59. Matters Before a Magistrate Judge",
+               "shortname":"Rule 59",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-59-matters-before-a-magistrate-judge\/"
+            },
+            {
+               "id":"1161",
+               "idmaterial":"7",
+               "fullname":"Rule 60. Victim’s Rights",
+               "shortname":"Rule 60",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-60-victims-rights\/"
+            },
+            {
+               "id":"1162",
+               "idmaterial":"7",
+               "fullname":"Rule 61. Title",
+               "shortname":"Rule 61",
+               "section":"TITLE IX. GENERAL PROVISIONS",
+               "date":"2015",
+               "source":"https:\/\/www.federalrulesofcriminalprocedure.org\/title-ix\/rule-61-title\/"
+            }
+         ]
+      }
+   }
+]

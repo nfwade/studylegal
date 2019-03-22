@@ -1,0 +1,32 @@
+{% include 'pages/inc/header.html' %}
+{% include 'admin/inc/admin-header.html' %}
+  <div class="sixteen wide column centered">
+    <div class="ui segment">
+      <h1 class="centered">{{page.name}} Study Legal</h1>
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Date Joined</th>
+            <th>Status</th>
+            <th>Domain</th>
+        </tr></thead>
+        <tbody>
+          {% for user in admindata.students %}
+          <tr>
+            <td>{{user.email}}</td>
+
+            <td>{{user.date_joined}}</td>
+
+            <td>{{user.registration_status}}</td>
+
+            <td>{{user.domain}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+  </div>
+</div>
+
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

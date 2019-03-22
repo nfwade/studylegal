@@ -1,0 +1,37 @@
+{% include 'pages/inc/header.html' %}
+  <div class="four wide column">
+    <div class="ui cards">
+      <div class="card">
+        <a class="image" href="/browse/{{data.book.url_name}}">
+          <img src="/assets/img/books/{{data.book.url_name}}.jpg">
+        </a>
+        <div class="content">
+          <a class="header" href="/browse/{{data.book.url_name}}">{{data.book.full_name}}</a>
+          <div class="meta">
+            Edition: {{data.book.edition}}
+          </div>
+          <div class="description">
+            {{data.book.wikipedia_description|raw }}
+          </div>
+        </div>
+        <div class="extra content">
+          <a>
+          <div class="ui two buttons">
+            <a class="ui button" href="/browse/{{data.book.url_name}}">Read</a>
+            <a class="ui basic active button" target="_blank" href="{{data.book.purchase_url}}">Buy</a>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ten wide column ">
+    <h2>{{data.book.full_name}}</h2>
+    <div class="ui segments">
+    {% for item in data.sections %}
+      <div class="ui segment"><a href="{{data.book.url_name}}/{{item.url_section}}">{{item.section}}</a></div>
+    {% endfor %}
+    </div>
+  </div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

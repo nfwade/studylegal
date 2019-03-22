@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="{{ page.description }}">
+  <title>{{ page.title }}</title>
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/alertify.min.css">
+  <link rel="stylesheet" href="/assets/css/alertify.rtl.min.css">
+  <link rel="stylesheet" href="/assets/css/alertify.semantic.css">
+  <link rel="stylesheet" type="text/css" href="/assets/semantic/semantic.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <script src="/assets/js/jquery-2.1.4.js"></script>
+  <script src="/assets/js/jquery-ui.js"></script>
+  <script src="/assets/js/alertify.min.js"></script>
+  <script src="/assets/semantic/semantic.js"></script>
+  <script src="/assets/js/validate.js"></script>
+  <script src="/assets/js/validate-additional-methods.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/reader.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/quill.base.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/quill.snow.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Lato:400,400italic,700italic,700|Open+Sans+Condensed:300,700,300italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+$(document)
+  .ready(function() {
+    $('#contact-modal').modal();
+    $('#register-modal').modal();
+    $('#reset-modal').modal();
+    $('.contact-btn').click( function(){
+      $('#contact-modal').modal({blurring: true}).modal('show');
+    });
+    $('.login-btn').click( function(){
+      $('#login-modal').modal({blurring: true}).modal('show');
+    });
+    $('.register-btn').click( function(){
+      $('#register-modal').modal({blurring: true}).modal('show');
+    });
+    $('.reset-btn').click( function(){
+      $('#reset-modal').modal({blurring: true}) .modal('show');
+    });
+  $('.ui.accordion').accordion();
+  $('.ui.dropdown').dropdown();
+});
+</script>
+<script src="/assets/js/quill-latest.js"></script>
+<script src="/assets/js/autosize.js"></script>
+<script src="/assets/js/{% if page.name == 'Read' %}reader{% endif %}{% if page.name == 'Outline' %}outline{% endif %}.js"></script>
+</head>
+<body class="sl-app-{{page.name}}">
+  <div class="sl-loader" style="position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;z-index: 9999;">
+    <div class="ui active inverted dimmer">
+      <div class="ui large text loader">Loading</div>
+    </div>
+  </div>
+<div id="reader-brightness-filter" class="bright-1 ui grid">
+
+<div class="row" style="background-color: #f1f1f1 !important;padding: 14px 0px 0px 0px !important;max-height:60px;">
+  <div class="sixteen wide column" style="padding:0px;background-color:#f1f1f1;">
+  	<div class="ui tabular menu course-list" style="padding-left: 15px !important;padding-right: 15px !important;">
+      <div id='add-course-button'><div class='ui icon button'><i class='plus icon'></i></div></div>
+
+        <div class="right menu" style="margin-top:-14px;">
+          <div class="special-menu {% if page.name == 'Read' %}special-active{% endif %}" onclick="javascript:window.location='/read'"><a class="" href="/read">
+            Read
+          </a></div>
+          <div class="special-menu {% if page.name == 'Outline' %}special-active{% endif %}" onclick="javascript:window.location='/outline'"><a class="" href="/outline">
+            Outline
+          </a></div>
+          <div class="ui dropdown item special-dropdown">
+            <div class="text">{{ user.email }}</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item" href="/account">Account {% if user.pro == true %} (Pro) {% endif %} {% if user.pro == False %} (Basic) {% endif %}</a>
+              {% if user.pro == false %}<a class="item" href="/pro">Upgrade</a>{% endif %}
+              {% if page.name == 'Read' %}<a class="item" id="tutorial-start-button">Take a Tour</a>{% endif %}
+              <a class="item contact-btn">Contact</a>
+              <a class="item" href="/learn">Help</a>
+              <div class="divider"></div>
+              <a class="item" href="/user/logout"><i class="sign out icon"></i>Logout</a>
+            </div>
+          </div>
+            <span class="item" style="padding:0px;"><a href="/"><img src="/assets/img/study_legal_icon.png" style="max-height:34px;float:right;"/></a></span>
+        </div>
+
+  	</div>
+  </div>
+</div>

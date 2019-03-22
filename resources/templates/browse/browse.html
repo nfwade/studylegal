@@ -1,0 +1,32 @@
+{% include 'pages/inc/header.html' %}
+<div class="two wide column"></div>
+  <div class="fourteen wide column">
+    <div class="ui four cards">
+      {% for book in data.books %}
+      <div class="card">
+        <a class="image" href="/browse/{{book.url_name}}">
+          <img src="/assets/img/books/{{book.url_name}}.jpg">
+        </a>
+        <div class="content">
+          <a class="header" href="/browse/{{book.url_name}}">{{book.full_name}}</a>
+          <div class="meta">
+            Edition: {{book.edition}}
+          </div>
+          <div class="description">
+            {{book.wikipedia_description|raw }}
+          </div>
+        </div>
+        <div class="extra content">
+          <a>
+          <div class="ui two buttons">
+            <a class="ui button" href="/browse/{{book.url_name}}">Read</a>
+            <a class="ui basic active button" target="_blank" href="{{book.purchase_url}}">Buy</a>
+          </div>
+        </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

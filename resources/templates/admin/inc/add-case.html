@@ -1,0 +1,28 @@
+<form class="ui form" action="/apollo/addcase" method="post">
+<input type="text" id="url" name="url" placeholder="Google Scholar URL"/>
+<input class="ui button" type="submit" value="Get"/>
+</form>
+<hr/>
+
+<hr/><h4>Manual Add</h4>
+<br/>
+<form class="ui form" target='_blank' action='/apollo/add/case' method='post'>
+<input class="ui primary button floated right" type='submit' value='Add Material'/><br/>
+
+<label>Book Id </label><br/><input type='text' name='idbook' id='idbook' value='10' placeholder="idbook"/><br/>
+
+<label>Source: </label><br/><input type='text' name='source' id='source' value='{{admindata.case.source}}' placeholder="source"/><br/>
+
+<label>Full Name: </label><br/><input type='text' name='fullname' id='fullname' value='{{admindata.case.fullname}}' placeholder="full-name"/><br/>
+
+<label>Short Name: </label><br/><input type='text' name='shortname' id='shortname' value='{{admindata.case.shortname}}' placeholder="full-name"/><br/>
+
+
+<label>Citation: </label><br/><input type='text' name='citation' id='citation' value='{{admindata.case.citation}}' placeholder="citation"/><br/>
+
+<label>Date: </label><br/><input type='text' name='date' id='date' value='{{admindata.case.date}}' placeholder="date"/><br/>
+
+<label>Full Opinion</label><br/><textarea id='opinionoriginal' name='opinionoriginal' placeholder="opinion">
+{{admindata.case.opinionoriginal|raw}}
+</textarea><br/>
+</form>

@@ -1,0 +1,28 @@
+<!--register modal-->
+<div class="ui small modal" id="register-modal">
+  <div class="header">
+    Sign Up
+  </div>
+  <div class="content">
+    <form action="/user/register" method="post" id="registerform">
+    <div class="ui left icon input fluid field">
+      <input name="regemail" id="regemail" type="text" placeholder="Email"/>
+      <i class="user icon"></i>
+    </div><br/>
+    <div class="ui left icon input fluid field">
+			<input type="password" name="regp" id="regp" placeholder="Password" />
+      <i class="lock icon"></i>
+    </div><br/>
+		<div class="ui left icon input fluid field">
+      <input type="password" name="regp2" id="regp2" placeholder="Confirm Password" />
+      <i class="lock icon"></i>
+    </div><br/>
+		<div class="ui field">
+		  <input type="checkbox" id="tc_agreement" name="tc_agreement" />
+		  <label>I agree to the <a href="/terms" target="_blank">Terms & Conditions</a> and <a href="/privacy" target="_blank">Privacy Policy</a> of Study Legal LLC.</label>
+		</div><br/>
+  </div>
+  <div class="actions">
+    <div class=""><input class="ui green button" id="submit-registration-btn" type="submit" value="Sign Up"/></form></div>
+  </div>
+</div>

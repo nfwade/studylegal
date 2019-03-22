@@ -1,0 +1,361 @@
+{% include 'app/inc/header.html' %}
+
+<div class="row">
+	<div class="three wide column" id="materials-column">
+		<div class="ui horizontal divider your-materials-divider">ADD MATERIALS</div>
+		<div class="ui transparent huge left icon input" id="case-search-wrapper">
+			<input type="text" id="content-search-input" placeholder="Search for a Case...">
+			<i class="search icon"></i>
+		</div>
+		<div id="ac-results" class="ui segments">
+		</div>
+		<div class="materials-wrapper">
+			<div class="ui basic fluid small buttons">
+	      <button class="ui labeled icon button" id="custom-material-button">
+	        <i class="upload icon"></i>
+	        Custom
+	      </button>
+
+				<div class="ui top right pointing dropdown right labeled icon button add-code-wrapper">
+						Code<i class="book icon" id="add-code-btn"></i>
+					<div class="menu" id="add-code-menu"></div>
+				</div>
+	    </div>
+
+		</div>
+		<div class="ui horizontal divider your-materials-divider">YOUR MATERIALS</div>
+		<div class="ui blurring fluid vertical menu content-list" id="content-list">
+			 <div class="ui inverted dimmer"><div class="ui text loader">Loading</div></div>
+		</div>
+	</div>
+
+	<div class="content-wrapper ui eleven wide column" id="context-content">
+	  <div class="ui raised segment" id="content-segment">
+			<div class="ui inverted dimmer"><div class="ui text loader">Loading</div></div>
+			<!--FOR Download
+			<a id="download-material-button" class="ui orange right corner label download-material-button">
+				<i class="download icon"></i>
+		 	</a>-->
+			<h2 class="content-title"></h2>
+			<div class="content-date"></div>
+			<div class="content-citation"></div>
+		 <div class="content-body-wrapper ui">
+			 <div class="content-opinion" readonly></div>
+		 </div>
+	  </div>
+	</div>
+
+	<div class="brief-wrapper ui blurring eleven wide column" id="context-brief">
+		 <div class="ui inverted dimmer"><div class="ui text loader">Loading</div></div>
+			<button  id="brief-save-button" class="ui basic right labeled icon button">
+		  <span id="auto-save-status">Saved</span>
+			<i class="save icon"></i>
+		</button>
+		<div style="clear:both;"></div>
+		<div class="ui segments first-brief-header">
+			<!-- FACTS Section -->
+			<div class="ui green inverted segment top attached brief-header"><h5 class="ui header"><i class="newspaper icon"></i><div class="content">Facts</div></h5></div>
+			<div class="qw ui attached segment no-padded" id="facts-editor-wrapper">
+			 <div id="facts-editor-toolbar" class="toolbar-container">
+			 {% include 'app/inc/quill-editor-toolbar.html' %}
+			 </div>
+					<div id="facts-editor-container"></div>
+			</div>
+			<!-- ISSUE Section -->
+			<div class="ui teal inverted segment  brief-header"><h5 class="ui header"><i class="random icon"></i><div class="content">Issues</div></h5></div>
+			<div class="qw ui attached segment no-padded" id="issues-editor-wrapper">
+			 <div id="issues-editor-toolbar" class="toolbar-container">
+			{% include 'app/inc/quill-editor-toolbar.html' %}
+			 </div>
+					<div id="issues-editor-container"></div>
+			</div>
+			<!-- HOLDING Section -->
+			<div class="ui blue inverted segment brief-header"><h5 class="ui header"><i class="legal icon"></i><div class="content">Holding</div></h5></div>
+			<div class="qw ui attached segment no-padded" id="holding-editor-wrapper">
+			 <div id="holding-editor-toolbar" class="toolbar-container">
+			{% include 'app/inc/quill-editor-toolbar.html' %}
+			 </div>
+					<div id="holding-editor-container"></div>
+			</div>
+			<!-- RULES Section -->
+			<div class="ui violet inverted segment brief-header"><h5 class="ui header"><i class="flag icon"></i><div class="content">Rules</div></h5></div>
+			<div class="qw ui attached segment no-padded" id="rules-editor-wrapper">
+			 <div id="rules-editor-toolbar" class="toolbar-container">
+			 {% include 'app/inc/quill-editor-toolbar.html' %}
+			 </div>
+					<div id="rules-editor-container"></div>
+			</div>
+			<!-- ANALYSIS Section -->
+			<div class="ui purple inverted segment brief-header"><h5 class="ui header"><i class="quote left icon"></i><div class="content">Analysis</div></h5></div>
+			<div class="qw ui attached segment no-padded" id="analysis-editor-wrapper">
+			 <div id="analysis-editor-toolbar" class="toolbar-container">
+			 {% include 'app/inc/quill-editor-toolbar.html' %}
+			 </div>
+					<div id="analysis-editor-container"></div>
+			</div>
+			<!-- NOTES Section -->
+			<div class="ui pink inverted segment brief-header"><h5 class="ui header"><i class="write square icon"></i><div class="content">Notes</div></h5></div>
+			<div class="ui attached segment no-padded" id="notes-editor-wrapper">
+			 <div id="notes-editor-toolbar" class="toolbar-container">
+					{% include 'app/inc/quill-editor-toolbar.html' %}
+			 </div>
+					<div id="notes-editor-container"></div>
+			</div>
+		</div>
+	</div><!--end brief sections -->
+
+	<div class="ui one wide column brief-tools-wrapper" id="thisisthetest">
+		<div class="ui labeled icon inline visible right vertical menu sticky brief-toolbar" id="sticky">
+			<a id="content-toggle" class="item">Read</a>
+			<a id="dual-toggle" class="item"><i class="ui columns icon"></i></a>
+			<a id="brief-toggle" class="item">Brief</a>
+	  </div>
+	</div>
+
+<!--highlight menu-->
+<div class="ui popup top center transition" id="highlight-menu">
+	<div class="ui compact icon menu">
+		<a class="green item tool f">
+			Facts
+		</a>
+		<a class="teal item tool i">
+			Issues
+		</a>
+		<a class="blue item tool r">
+			Rules
+		</a>
+		<a class="violet item tool a">
+			Analysis
+		</a>
+		<a class="purple item tool h">
+			Holding
+		</a>
+		<a class="pink item tool n">
+			Notes
+		</a>
+	</div>
+</div>
+
+<!-- Modals -->
+<div class="ui small modal" id="add-course-wrapper">
+	<div class="header">
+		Add Courses
+	</div>
+	<div class="content">
+		<div class="ui two column grid">
+			<div class="column">
+				<h4>Your Courses</h4>
+				<div class="current-course-list ui fluid vertical menu">
+				</div>
+			</div>
+			<div class="column">
+				<h4>Available Courses</h4>
+				<div class="add-course-list ui fluid vertical menu">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ui small basic modal remove-material-confirmation">
+	<div class="ui icon header">
+		<i class="trash outline icon"></i>
+		Remove Material
+	</div>
+    <div class="content">
+      <p class="align-center">Are you sure you want to permanently remove this material from your course?</p>
+    </div>
+  <div class="actions align-center">
+    <div class="ui basic inverted cancel button">
+      <i class="remove icon"></i>
+      Cancel
+    </div>
+    <div class="ui red ok inverted button">
+      <i class="checkmark icon"></i>
+      Remove
+    </div>
+  </div>
+</div>
+
+<div class="ui large modal add-custom-material">
+  <div class="header">Add Custom Material</div>
+  <div class="content">
+		<div class="cm-test-area"></div>
+		<div class="ui form">
+			<form id="custom-material-form">
+				<div class="field">
+					 <label>Title</label>
+					 <input type="text" name="first-name" placeholder="Title">
+				</div>
+				<div class="inline fields">
+			    <label for="fruit">Type</label>
+			    <div class="field">
+			      <div class="ui radio checkbox">
+			        <input type="radio" name="type" value="opinion" checked="" tabindex="0" class="hidden">
+			        <label>Opinion</label>
+			      </div>
+			    </div>
+			    <div class="field">
+			      <div class="ui radio checkbox">
+			        <input type="radio" name="type" value="statute" tabindex="0" class="hidden">
+			        <label>Statute</label>
+			      </div>
+			    </div>
+			    <div class="field">
+			      <div class="ui radio checkbox">
+			        <input type="radio" name="type" value="regulation" tabindex="0" class="hidden">
+			        <label>Regulation</label>
+			      </div>
+			    </div>
+			    <div class="field">
+			      <div class="ui radio checkbox">
+			        <input type="radio" name="type" value="code" tabindex="0" class="hidden">
+			        <label>Code</label>
+			      </div>
+			    </div>
+					<div class="field">
+			      <div class="ui radio checkbox">
+			        <input type="radio" name="type" value="other" tabindex="0" class="hidden">
+			        <label>Other</label>
+			      </div>
+			    </div>
+			  </div>
+				<div class="field">
+			 		<label>Content</label>
+			 		<textarea name='content' placeholder="Content"></textarea>
+		 		</div>
+			</form>
+		</div>
+  </div>
+	<div class="actions">
+    <div class="ui cancel button">Cancel</div>
+    <div class="ui primary button" id="custom-material-form-button"><i class="plus icon"></i> Add Material</div>
+  </div>
+</div>
+
+<div class="ui small basic modal confirm-remove-course">
+    <div class="ui icon header">
+      <i class="close icon"></i>
+      Remove Course
+    </div>
+    <div class="content" style="text-align:center;">
+      <p>Are you sure you want to remove that course?</p>
+    </div>
+    <div class="actions" style="text-align:center;">
+      <div class="ui basic cancel inverted button">
+        <i class="remove icon"></i>
+        Cancel
+      </div>
+      <div class="ui red ok inverted button" >
+        <i class="checkmark icon"></i>
+        Remove
+      </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+		var notesEditor = new Quill("#notes-editor-wrapper #notes-editor-container", {
+			  modules: {
+				"authorship": {
+				  authorId: "advanced",
+				  enabled: true
+				},
+				"toolbar": {
+				  container: "#notes-editor-wrapper #notes-editor-toolbar"
+				},
+				"link-tooltip": true,
+				"image-tooltip": true,
+				"multi-cursor": true
+			  },
+			  styles: false,
+			  theme: "snow"
+		});
+
+		var factsEditor = new Quill("#facts-editor-wrapper #facts-editor-container", {
+			  modules: {
+				"authorship": {
+				  authorId: "advanced",
+				  enabled: true
+				},
+				"toolbar": {
+				  container: "#facts-editor-wrapper #facts-editor-toolbar"
+				},
+				"link-tooltip": true,
+				"image-tooltip": true,
+				"multi-cursor": true
+			  },
+			  styles: false,
+			  theme: "snow"
+		});
+
+		var issuesEditor = new Quill("#issues-editor-wrapper #issues-editor-container", {
+			  modules: {
+				"authorship": {
+				  authorId: "advanced",
+				  enabled: true
+				},
+				"toolbar": {
+				  container: "#issues-editor-wrapper #issues-editor-toolbar"
+				},
+				"link-tooltip": true,
+				"image-tooltip": true,
+				"multi-cursor": true
+			  },
+			  styles: false,
+			  theme: "snow"
+		});
+
+		var holdingEditor = new Quill("#holding-editor-wrapper #holding-editor-container", {
+			  modules: {
+				"authorship": {
+				  authorId: "advanced",
+				  enabled: true
+				},
+				"toolbar": {
+				  container: "#holding-editor-wrapper #holding-editor-toolbar"
+				},
+				"link-tooltip": true,
+				"image-tooltip": true,
+				"multi-cursor": true
+			  },
+			  styles: false,
+			  theme: "snow"
+		});
+
+		var rulesEditor = new Quill("#rules-editor-wrapper #rules-editor-container", {
+			  modules: {
+				"authorship": {
+				  authorId: "advanced",
+				  enabled: true
+				},
+				"toolbar": {
+				  container: "#rules-editor-wrapper #rules-editor-toolbar"
+				},
+				"link-tooltip": true,
+				"image-tooltip": true,
+				"multi-cursor": true
+			  },
+			  styles: false,
+			  theme: "snow"
+		});
+
+		var analysisEditor = new Quill("#analysis-editor-wrapper #analysis-editor-container", {
+			  modules: {
+				"authorship": {
+				  authorId: "advanced",
+				  enabled: true
+				},
+				"toolbar": {
+				  container: "#analysis-editor-wrapper #analysis-editor-toolbar"
+				},
+				"link-tooltip": true,
+				"image-tooltip": true,
+				"multi-cursor": true
+			  },
+			  styles: false,
+			  theme: "snow"
+		});
+    </script>
+</div>
+{% include 'pages/inc/footer.html' %}

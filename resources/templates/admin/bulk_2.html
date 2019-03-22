@@ -1,0 +1,27 @@
+{% include 'pages/inc/header.html' %}
+{% include 'admin/inc/admin-header.html' %}
+  <div class="sixteen wide column centered">
+    <div class="ui segment">
+    <form action="/apollo/test/citations" method="post" class="ui form">
+      <div class="ui field">
+        <label>Book</label>
+        <select class="ui dropdown" id="book" name="book">
+          {% for book in admindata.books %}
+            <option value="{{book.id}}">
+              {{book.full_name}}
+              by
+              {{book.author}}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="ui field">
+        <label>Citations (Separated by Commas ,)</label>
+        <textarea id="material-list" name="material-list"></textarea>
+      </div>
+       <button class="ui button" type="submit">Parse</button>
+    </form>
+  </div>
+</div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

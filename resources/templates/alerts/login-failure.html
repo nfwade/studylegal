@@ -1,0 +1,35 @@
+{% include 'pages/inc/header.html' %}
+<div class="five wide column centered ui segment">
+  <img src="/assets/img/study_legal_icon.png" class="sl-alert-icon ui centered image" />
+  <h1 class="sl-alert-h1">Login Failed</h1>
+  <div class="ui divider"></div>
+  <p class="sl-alert-p">
+    Try again.<br/>
+  </p>
+  <div class="ui fields">
+    <form action="/user/login" method="post" id="loginform">
+      <div class="ui left icon input fluid">
+        <input type="text" name="logemail" id="logemail" placeholder="Email" />
+        <i class="user icon"></i>
+      </div><br/>
+      <div class="ui left icon input fluid">
+        <input type="password" name="logp" id="logp" placeholder="Password" />
+        <i class="lock icon"></i>
+      </div><br/>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" name="rm" id="rm" />
+          <label>Remember me</label>
+        </div><br/>
+        <div style="text-align:right;margin-top:-22px;">
+          <a class="reset-btn">Forgot your password?</a>
+        </div>
+      </div>
+      <div class="field" style="margin-top:20px;">
+        <input class="ui fluid green large submit button green" type="submit" value="Login"/>
+      </div>
+    </form>
+  </div>
+</div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

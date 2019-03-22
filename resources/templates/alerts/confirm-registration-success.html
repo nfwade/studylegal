@@ -1,0 +1,18 @@
+{% include 'pages/inc/header.html' %}
+  <script>
+  $(document)
+    .ready(function() {
+      ga('send', 'event', { eventCategory: 'registration', eventAction: 'email-confirmed', eventLabel: '{{ data.email }}' });
+    });
+  </script>
+  <div class="five wide column centered ui segment">
+    <img src="/assets/img/study_legal_icon.png" class="sl-alert-icon ui centered image" />
+    <h1 class="sl-alert-h1">Registration Confirmed</h1>
+    <div class="ui divider"></div>
+    <p class="sl-alert-p">
+      You've successfully confirmed your email.  You can now login here.<br/><br/>
+      <a class="ui green huge button login-btn" href="#">Login</a>
+    </p>
+</div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

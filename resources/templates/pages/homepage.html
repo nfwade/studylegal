@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="google-site-verification" content="Yu6SNNyKDQpCQKiN4uUiFhXk19-MXunDLOlZ-K6SjvI" />
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-52G262H');</script>
+  <!-- End Google Tag Manager -->
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" />
+	<link rel="stylesheet" href="/assets/css/alertify.min.css">
+	<link rel="stylesheet" href="/assets/css/alertify.rtl.min.css">
+	<link rel="stylesheet" href="/assets/css/alertify.semantic.css">
+	<link rel="stylesheet" type="text/css" href="/assets/semantic/semantic.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<script src="/assets/js/jquery-2.1.4.js"></script>
+	<script src="/assets/js/jquery-ui.min.js"></script>
+	<script src="/assets/js/alertify.min.js"></script>
+	<script src="/assets/semantic/semantic.js"></script>
+	<script src="/assets/js/validate.js"></script>
+	<script src="/assets/js/validate-additional-methods.js"></script>
+  <script src="/assets/js/sl-base.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<style type="text/css">
+    .landing-top {
+      background-image: url('/assets/img/hammock-dark-pattern-1800.jpg') !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      background-position: center !important;
+      &:before {
+        content: '';
+    		position: absolute;
+    		top: 0;
+    		right: 0;
+    		bottom: 0;
+    		left: 0;
+    		background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    		opacity: .6;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52G262H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<!--Following menu new-->
+<div class="ui top fixed inverted text hidden inverted menu following menu-wrapper" style="background-color:#333!important;">
+  <div class="ui container">
+    <div class="item">
+      <a href="/">
+        <img class="logo" alt="Study Legal | Software for Law Students" src="/assets/img/logo_study_legal_inv.png"/>
+      </a>
+    </div>
+    <div class="right menu">
+      <a class="{% if page.name == 'home' %}active{% endif %} item" href="/">
+        Home
+      </a>
+      <a class="{% if page.name == 'Features' %}active{% endif %} item"  href="/features">
+        Features
+      </a>
+      <a class="{% if page.name == 'Learn' %}active{% endif %} item"  href="/learn">
+        Learn
+      </a>
+      <a class="{% if page.name == 'Browse' %}active{% endif %} item"  href="/browse">
+        Browse
+      </a>
+      {% if user.loggedin == true %}
+      <div class="ui dropdown item" tabindex="0">
+                <div class="text">{{user.email}}</div>
+                <i class="dropdown icon"></i>
+                <div class="menu" tabindex="-1">
+                  <a class="item" href="/account">Account {% if user.pro == true %} (Pro) {% else %} (Basic) {% endif %}  </a>
+                              <a class="item" href="/learn">Help</a>
+                  <a class="item" href="/contact">Contact</a>
+                  <div class="divider"></div>
+                  <a class="item" href="/user/logout"><i class="sign out icon"></i>Logout</a>
+                </div>
+              </div>
+      <div class="item">
+        <a class="ui green button" href="/read">Read <i class="chevron right icon"></i></a>
+      </div>
+      {% else %}
+      <div class="item">
+        <a class="ui button login-btn">Login</a>
+      </div>
+      <div class="item">
+        <a class="ui green button register-btn"><i class="user icon"></i> Sign Up </a>
+      </div>
+      {% endif %}
+    </div>
+</div>
+</div>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui vertical masthead center aligned segment landing-top">
+
+  <header>
+    <div class="ui container">
+      <div class="ui large secondary pointing inverted menu" style="border:none !important;">
+        <div id="logo-wrapper">
+          <a href="https:/"><img class="logo" alt="Study Legal | Software for Law Students" src="{{page.url}}assets/img/logo_study_legal_inv.png"/></a>
+        </div>
+        <!--right menu-->
+        <div class="right menu" style="font-size:15px!important;">
+          <a class="{% if page.name == 'home' %}active{% endif %} item" href="/">
+            Home
+          </a>
+          <a class="{% if page.name == 'Features' %}active{% endif %} item"  href="/features">
+            Features
+          </a>
+          <a class="{% if page.name == 'Learn' %}active{% endif %} item"  href="/learn">
+            Learn
+          </a>
+          <a class="{% if page.name == 'Browse' %}active{% endif %} item"  href="/browse">
+            Browse
+          </a>
+          {% if user.loggedin == true %}
+          <div class="ui dropdown item" tabindex="0">
+                    <div class="text">{{user.email}}</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu" tabindex="-1">
+                      <a class="item" href="/account">Account {% if user.pro == true %} (Pro) {% else %} (Basic) {% endif %}  </a>
+                                  <a class="item" href="/help">Help</a>
+                      <a class="item" href="/contact">Contact</a>
+                      <div class="divider"></div>
+                      <a class="item" href="/user/logout"><i class="sign out icon"></i>Logout</a>
+                    </div>
+                  </div>
+          <div class="item">
+            <a class="ui green button" href="/read">Read <i class="chevron right icon"></i></a>
+          </div>
+          {% else %}
+          <div class="item" style="padding-right:5px;">
+            <a class="ui inverted button login-btn">Login</a>
+          </div>
+          <div class="item" style="padding-left:5px;">
+            <a class="ui inverted green button register-btn">Sign Up </a>
+          </div>
+          {% endif %}
+        </div>
+        <!-- end right menu-->
+      </div>
+    </div>
+  </header>
+
+    <div class="ui container">
+      <h1 class="ui inverted header">
+        Read all your cases for FREE.<br/> Brief and outline while you read.
+      </h1>
+      <h2 class="ui inverted header">The fastest way to Read, Brief, and Outline<br/> law school materials.</h2><br/><br/>
+      {% if user.loggedin == false %}
+      <p class="ui white">Sign Up today and get 1 Free Month of Briefing and Outlining.</p>
+      <div class="ui action input">
+        <input type="text" placeholder="Email" class="ui input notify-input">
+        <div class="ui green button notify-btn">Sign Up<i class="right arrow icon"></i></div>
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Read & Brief All Your Cases</h3>
+          <p>Law school is hard enough.  Make it easier by streamlining your study process.  Read and brief every case one time.   </p>
+          <h3 class="ui header">Automatic Outlines From Your Briefs</h3>
+          <p>Study Legal automatically assembles your briefs into course outlines.  Spend more time studying and less time organizing.</p>
+        </div>
+        <div class="eight wide right floated column">
+          <div class="ui image">
+            <img src="/assets/img/laptop-sample.png" />
+          </div>
+          <!--<div class="ui fluid vertical steps">
+            <div class="step">
+              <i class="book icon"></i>
+              <div class="content">
+                <div class="title">Read</div>
+                <div class="description">Read all of your cases, statutes, regulations, rules, and codes.</div>
+              </div>
+            </div>
+            <div class="step">
+              <i class="edit icon"></i>
+              <div class="content">
+                <div class="title">Brief</div>
+                <div class="description">Brief while you read.  Select facts, issues, holdings, rules, analysis, and notes.</div>
+              </div>
+            </div>
+            <div class="step">
+              <i class="file text outline icon"></i>
+              <div class="content">
+                <div class="title">Outline</div>
+                <div class="description">Study Legal automatically assembles your briefs into an outline.</div>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+      <div class="center aligned row">
+        <!-- SAMPLE
+        <div class="column">
+          <h3>"I shouldn't have gone with their competitor."</h3>
+          <p>
+            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+          </p>
+        </div>
+        -->
+        <div class="column">
+          <h3>Read</h3>
+          <p>Organize and read all of your materials in one place.  We have all the materials of law students available to read online.</p>
+        </div>
+        <div class="column">
+          <h3>Brief</h3>
+          <p>Highlight the relevant sections of the material to save them to your brief.  Review and edit your brief anytime.</p>
+        </div>
+        <div class="column">
+          <h3>Outline</h3>
+          <p>When your ready to study, automatically compile your briefs into an outline.  Download and print the outline or study online.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui text container">
+      <h3 class="ui header">How It Works</h3>
+      <p>Browse and add law courses to your account. Search for cases,
+        statutes, or rules by name.  Save materials to each course.  Read and brief simultaneously,
+        read through the material and use the briefing tools to pick out relevant information.
+        Review your briefs, update, edit, and add notes to your brief.  Generate course outlines,
+        Study Legal automatically generates an outline from your course briefs.  Customize or
+        download your course outline to study. </p>
+    </div>
+  </div>
+
+
+</div>
+{% include 'pages/inc/footer.html' %}

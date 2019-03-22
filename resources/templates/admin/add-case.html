@@ -1,0 +1,26 @@
+{% include 'pages/inc/header.html' %}
+{% include 'admin/inc/admin-header.html' %}
+  <div class="eight wide column centered">
+    <h1 class="centered">{{page.name}} Study Legal</h1>
+    {% include 'admin/inc/add-case.html' %}
+  </div>
+  <div class="eight wide column">
+    <script>
+    $(document)
+       .ready(function() {
+        $('.ui.accordion')
+          .accordion()
+        ;
+    });
+    </script>
+    <div class="ui accordion">
+      <div class="active title">
+        <i class="dropdown icon"></i>
+        Case as HTML
+      </div>
+      <div class="active content">
+        {{admindata.case.opinionoriginal|raw}}
+      </div>
+    </div>
+  </div>
+{% include 'pages/inc/footer.html' %}

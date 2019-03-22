@@ -1,0 +1,59 @@
+{% include 'pages/inc/header.html' %}
+  <div class="six wide column"></div>
+  <div class="four wide column">
+    <h2 class="ui icon header">
+      <i class="settings icon"></i>
+      <div class="content">
+        Account Settings
+        <div class="sub header">Manage your account settings.</div>
+      </div>
+    </h2>
+  </div>
+  <div class="four wide column"></div>
+  <div class="four wide column"></div>
+  <div class="eight wide column">
+    <div class="ui styled accordion">
+      <div class="active title">
+        <i class="dropdown icon"></i>
+        Your Info
+      </div>
+      <div class="active content">
+        <h4>Email</h4>
+          {{ user.email }}
+        <h4>Account Type</h4>
+        {% if user.pro == true %} <b>Pro</b>
+        <h4>Pro Service Expires</h4>
+          {{user.expiration}}
+        {% else %} <b>Basic</b> <a href="/pro">Upgrade</a>
+        {% endif %}
+      </div>
+      {% if user.pro == false %}
+      <div class="title">
+        <i class="dropdown icon"></i>
+        Upgrade to Pro
+      </div>
+      <div class="content">
+        <p>To get Pro, go here.</p>
+        <a href="/pro" class="ui button green">Get Pro<i class="right chevron icon"></i></a>
+      </div>
+      {% endif %}
+      <div class="title">
+        <i class="dropdown icon"></i>
+        Update your Password
+      </div>
+      <div class="content">
+        <p>To reset your password, fill out this form and we'll email you a link to reset your password.</p>
+        {% include 'pages/inc/update-password.html' %}
+      </div>
+      <div class="title">
+        <i class="dropdown icon"></i>
+        Cancel your account
+      </div>
+      <div class="content">
+        <p>To cancel your account, confirm your email address and password.</p>
+        {% include 'pages/inc/cancel-account.html' %}
+      </div>
+    </div>
+  </div>
+{% include 'pages/modals/cancel-account.html' %}
+{% include 'pages/inc/footer.html' %}

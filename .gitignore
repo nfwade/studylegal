@@ -1,0 +1,12 @@
+/public_html/tmp/
+/public_html/.htaccess
+public_html/assets/img/
+/resources/cache/
+/resources/composer.phar
+/resources/composer.lock
+/resources/config.php
+/resources/files
+/resources/vendor/
+/public_html/development
+/mysql_dbs/
+/old-git/

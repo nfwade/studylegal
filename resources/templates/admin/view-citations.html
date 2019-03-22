@@ -1,0 +1,177 @@
+{% include 'pages/inc/header.html' %}
+{% include 'admin/inc/admin-header.html' %}
+  <div class="sixteen wide column centered">
+    <div class="ui segment">
+      <h3> View Citations </h3>
+      <h4> Select a book to view the citations. </h4>
+      <div class="ui field">
+        <select class="ui fluid selection dropdown" id="book" name="book">
+          <option value="0">Select Book</option>
+          {% for book in admindata.books %}
+            <option value="{{book.id}}">
+              {{book.id}} |
+              {{book.full_name}}
+              by
+              {{book.author}}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+      <script>
+      var currentCitations = '';
+      var scanOn = false;
+      var scanCheckURL = 'http://localhost/apollo/scan/check/';
+      var scanGrabURL = 'http://localhost/apollo/scan/grab/';
+      var scrapeTotal = 0;
+      $(document)
+        .ready(function() {
+          /*pause inbetween steps */
+          function sleep (time) {
+            return new Promise((resolve) => setTimeout(resolve, time));
+          }
+
+          /*generate random number between start and finish*/
+          function getRan(start,finish) {
+            return Math.floor(Math.random() * finish) + start ;
+          }
+
+          /*load the citations*/
+          $('#book').change(function(){
+            data1 = $('#book').val();
+            theURL = "/apollo/view/citations/" + data1;
+            $('#result_table').html('');
+            $('#result_table').append('<thead><tr><th>Count</th><th>DBid</th><th>Citation</th><th>Status</th></tr></thead>');
+            $.getJSON(theURL, function(result){
+              currentCitations = result;
+                $.each(result, function(i, field){
+                  iter = i + 1;
+                  $('#result_table').append('<tr class="' + field['status'] + '"><td>' + iter + '</td><td>' + field['id'] + '</td><td>' + field['citation'] + '</td><td>' + field['status'] + '</td></tr>');
+                  scrapeTotal = iter;
+                });
+
+            });
+          });
+
+          var scanOn = false;
+
+          /*start scanning by ajaxing the items with status='new' || 'blocked'*/
+          function scanLevelZero(iter) {
+            if (scanOn == true && $('#book').val() != '0'){
+              //check that the status is new
+              field = currentCitations[iter];
+                //LOOP
+                //check that the citation is fresh
+                if (field['status'] == 'new'){
+                  /*THE CHECK*/
+                  //ajax the check
+                  theCheck = [];
+                  tryCheck = scanCheck(field['id']).success(function(data){
+                    data = $.parseJSON( data );
+                    theCheck = data;
+                  });
+                  $('#scan-results').append('<tr id="scan-result-row-' + field['id'] + '"><td>' + field['id'] + '</td><td>' + field['citation'] + '</td><td>check: ' + theCheck['result'] + '</td></tr>');
+                  if(theCheck['result'] == "found"){
+                    //sleep before you grab the success 7000, 27000
+                    sleep(getRan(7000, 27000)).then(() => {
+                      /*THE GRAB*/
+                      theGrab = '';
+                      tryGrab = scanGrab(field['id']).success(function(data){
+                        theGrab = data;
+                      });
+                      $('#scan-result-row-' +field['id']).append('<td>grab: ' + theGrab + '</td>');
+                      //sleep before doing another check 63000,180000
+                      sleep(getRan(63000,180000)).then(() => {
+                        iter++;
+                        updateProgress(iter);
+                        scanLevelZero(iter);
+                      });
+                    });
+                  }
+                  else {
+                    iter++;
+                    scanLevelZero(iter);
+                  }
+                  if(theCheck == "blocked"){
+                    //if it's blocked, let me know and stop this loop
+                    $('#scan-alert-area').append('<div class="ui negative message"><i class="close icon"></i><div class="header">Connection blocked!</div><p>The scan was stopped.  Time to change IPs.</p></div>');
+                    document.title = "BLOCKED...";
+                  }
+                }
+                else {
+                  //the field isn't new
+                  iter++;
+                  scanLevelZero(iter);
+                }
+            }
+            else {
+              scanLevelZero(iter);
+            }
+          }
+
+          function updateProgress(iter){
+          	var thepercentage =  100 * (iter / scrapeTotal)
+            thepercentage = thepercentage.toFixed(0);
+          	$('#scrape_progress').progress({
+          	  percent: thepercentage
+          	});
+          	//$('#scrape_progress .label').html(thepercentage + "% Completed");
+            $('#scrape_progress .progress').html(thepercentage + "%");
+          	document.title = thepercentage + "% Completed";
+          }
+
+
+          function scanCheck(idCitation){
+            theURL = scanCheckURL + idCitation;
+            return $.ajax({
+        			async: false,
+        			type: "GET",
+        			//dataType: "json",
+        			url: theURL,
+        		});
+          }
+
+          function scanGrab(idCitation){
+            idbook = $('#book').val();
+            theURL = scanGrabURL + idCitation;
+            return $.ajax({
+        			async: false,
+        			type: "GET",
+        			//dataType: "json",
+        			url: theURL,
+        		});
+          }
+
+          $('#start-scan-btn').click(function(){
+            scanOn = true;
+            scanLevelZero(0);
+            document.title = "SCANNING...";
+
+            $('#start-scan-btn').hide();
+
+            $('#scrape_wrapper').html('<div class="ui teal progress" id="scrape_progress">  <div class="bar"><div class="progress"></div></div>  <div class="label">  </div></div>');
+	          $('#scrape_progress').progress();
+          });
+
+          $('#stop-scan-btn').click(function(){
+            scanOn = false;
+            document.title = "STOPPED";
+          });
+
+        });
+      </script>
+      <table class="ui table" id="result_table">
+
+      </table>
+      <br/>
+      <button id="start-scan-btn" class="ui primary button">Start Scan</button>
+      <button id="stop-scan-btn" class="ui button"><i class="ui stop icon"></i>Stop</button>
+    </br></br>
+      <div id="scrape_wrapper"></div>
+      <div id="scan-alert-area"></div>
+
+      <table class="ui table" id="scan-results">
+      </table>
+  </div>
+</div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

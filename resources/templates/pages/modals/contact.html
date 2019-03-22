@@ -1,0 +1,21 @@
+<!--contact modal-->
+<div class="ui small modal" id="contact-modal">
+  <div class="header">
+    Contact Us
+  </div>
+  <div class="ui form content">
+    <p class="no-top-margin">Shoot us a brief email and we'll get back to you soon.</p>
+    <form id="contact-form" action="/contact/general" method="post">
+    <div class="ui left icon left input fluid">
+      <input type="text" placeholder="Email" name="email" id="email" />
+      <i class="user icon"></i>
+    </div><br/>
+    <div class="ui field">
+      <textarea class="ui" name="message" id="message" placeholder="Message..."></textarea>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6LdYkCATAAAAAB_J8c9zUyIiG9zWHCqcPPRAOVc8"></div>
+  </div>
+  <div class="actions">
+    <div class=""><input class="ui green button" type="submit" value="Send"/></form></div>
+  </div>
+</div>

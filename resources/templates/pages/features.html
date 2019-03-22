@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-52G262H');</script>
+  <!-- End Google Tag Manager -->
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" />
+	<link rel="stylesheet" href="/assets/css/alertify.min.css">
+	<link rel="stylesheet" href="/assets/css/alertify.rtl.min.css">
+	<link rel="stylesheet" href="/assets/css/alertify.semantic.css">
+	<link rel="stylesheet" type="text/css" href="/assets/semantic/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<script src="/assets/js/jquery-2.1.4.js"></script>
+	<script src="/assets/js/jquery-ui.js"></script>
+	<script src="/assets/js/alertify.min.js"></script>
+	<script src="/assets/semantic/semantic.js"></script>
+	<script src="/assets/js/validate.js"></script>
+	<script src="/assets/js/validate-additional-methods.js"></script>
+	<script src="/assets/js/alert.js"></script>
+  <script src="/assets/js/sl-base.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<style type="text/css">
+    .landing-top {
+      background-image: url('/assets/img/laptop-floor-dark-1800.jpg') !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      background-position: center !important;
+      &:before {
+        content: '';
+    		position: absolute;
+    		top: 0;
+    		right: 0;
+    		bottom: 0;
+    		left: 0;
+    		background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    		opacity: .6;
+      }
+
+    }
+    </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52G262H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!--Following menu new-->
+<div class="ui top fixed inverted text hidden inverted menu menu-wrapper"  style="background-color: #333!important;">
+  <div class="ui container">
+    <div class="item">
+      <a href="/">
+        <img class="logo" alt="Study Legal | Software for Law Students" src="/assets/img/logo_study_legal_inv.png"/>
+      </a>
+    </div>
+    <div class="right menu" style="font-size:15px!important;">
+      <a class="{% if page.name == 'home' %}active{% endif %} item" href="/">
+        Home
+      </a>
+      <a class="{% if page.name == 'Features' %}active{% endif %} item"  href="/features">
+        Features
+      </a>
+      <a class="{% if page.name == 'Learn' %}active{% endif %} item"  href="/learn">
+        Learn
+      </a>
+      <a class="{% if page.name == 'Browse' %}active{% endif %} item"  href="/browse">
+        Browse
+      </a>
+      {% if user.loggedin == true %}
+      <div class="ui dropdown item" tabindex="0">
+                <div class="text">{{user.email}}</div>
+                <i class="dropdown icon"></i>
+                <div class="menu" tabindex="-1">
+                  <a class="item" href="/account">Account {% if user.pro == true %} (Pro) {% else %} (Basic) {% endif %}  </a>
+                              <a class="item" href="/learn">Help</a>
+                  <a class="item" href="/contact">Contact</a>
+                  <div class="divider"></div>
+                  <a class="item" href="/user/logout"><i class="sign out icon"></i>Logout</a>
+                </div>
+              </div>
+      <div class="item">
+        <a class="ui green button" href="/read">Read <i class="chevron right icon"></i></a>
+      </div>
+      {% else %}
+      <div class="item">
+        <a class="ui button login-btn">Login</a>
+      </div>
+      <div class="item">
+        <a class="ui green button register-btn"><i class="user icon"></i> Sign Up </a>
+      </div>
+      {% endif %}
+    </div>
+</div>
+</div>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui vertical masthead center aligned segment landing-top">
+  <header>
+    <div class="ui container">
+      <div class="ui large secondary pointing inverted menu" style="border:none !important;">
+        <div id="logo-wrapper">
+          <a href="https:/"><img class="logo" alt="Study Legal | Software for Law Students" src="{{page.url}}assets/img/logo_study_legal_inv.png"/></a>
+        </div>
+        <!--right menu-->
+        <div class="right menu" style="font-size:15px!important;">
+          <a class="{% if page.name == 'home' %}active{% endif %} item" href="/">
+            Home
+          </a>
+          <a class="{% if page.name == 'Features' %}active{% endif %} item"  href="/features">
+            Features
+          </a>
+          <a class="{% if page.name == 'Learn' %}active{% endif %} item"  href="/learn">
+            Learn
+          </a>
+          <a class="{% if page.name == 'Browse' %}active{% endif %} item"  href="/browse">
+            Browse
+          </a>
+          {% if user.loggedin == true %}
+          <div class="ui dropdown item" tabindex="0">
+                    <div class="text">{{user.email}}</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu" tabindex="-1">
+                      <a class="item" href="/account">Account {% if user.pro == true %} (Pro) {% else %} (Basic) {% endif %}  </a>
+                                  <a class="item" href="/help">Help</a>
+                      <a class="item" href="/contact">Contact</a>
+                      <div class="divider"></div>
+                      <a class="item" href="/user/logout"><i class="sign out icon"></i>Logout</a>
+                    </div>
+                  </div>
+          <div class="item">
+            <a class="ui green button" href="/read">Read <i class="chevron right icon"></i></a>
+          </div>
+          {% else %}
+          <div class="item" style="padding-right:5px;">
+            <a class="ui inverted button login-btn">Login</a>
+          </div>
+          <div class="item" style="padding-left:5px;">
+            <a class="ui inverted green button register-btn">Sign Up </a>
+          </div>
+          {% endif %}
+        </div>
+        <!-- end right menu-->
+      </div>
+    </div>
+  </header>
+
+    <div class="ui container">
+      <h1 class="ui inverted header">
+        Read, Brief, and Outline, <i>Fast</i>
+      </h1>
+      {% if user.loggedin == false %}
+      <p class="ui white">Sign Up today and get 1 Free Month of Briefing and Outlining.</p>
+      <div class="ui action input">
+        <input type="text" placeholder="Email" class="ui input notify-input">
+        <div class="ui green button notify-btn">Sign Up<i class="right arrow icon"></i></div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <h3 class="ui inverted header sl-full-bar-header">
+    <i class="angle double down icon"></i>
+    Start Here
+  </h3>
+
+  <div class="ui grid container fifty-spacer">
+    <div class="one wide column"></div>
+    <div class="seven wide column">
+        <img class="bouncy ui larged bordered image" src="/assets/img/feature-add-courses.jpg">
+    </div>
+    <div class="seven wide column">
+      <div class="ui header">
+        <h2>
+          Add a Course
+        </h2>
+      </div>
+      <p>Save courses to your account.  We offer the following courses: Contracts, Torts, Real Property, and Criminal Law.  You can add and save the classes you want to your account.</p>
+    </div>
+  </div>
+
+  <div class="ui grid container fifty-spacer">
+    <h3 class="ui horizontal divider header">
+      <i class="bookmark icon"></i>
+      Read Materials
+    </h3>
+  </div>
+
+
+<div class="ui three column grid container fifty-spacer">
+  <div class="row">
+    <div class="column">
+        <img class="bouncy ui large bordered image" src="/assets/img/feature-case-search.jpg">
+        <h2 class="ui align header">
+          Search Cases
+        </h2>
+      <p>Search our massive case law database for cases from your syllabus.  You can save every case you want to your course.  If you save a case you can read and brief the case.</p>
+    </div>
+    <div class="column">
+      <img class="bouncy ui large bordered image" src="/assets/img/feature-code-search.jpg">
+      <h2 class="ui align header">
+        Browse Codes
+      </h2>
+      <p>Browse our selection of Codes and Statutes.  Codes are organized by book and section.  Codes can be added to courses and read just like cases.</p>
+    </div>
+    <div class="column">
+      <img class="bouncy ui large bordered image" src="/assets/img/feature-custom-material.jpg">
+      <h2 class="ui align header">
+        Add Custom Materials
+      </h2>
+      <p>Can't find what you're looking for in our database? You can add your own opinion, statute, regulation, or code.  After you add the material you can read and brief it.</p>
+    </div>
+  </div>
+</div>
+
+<div class="ui grid container fifty-spacer">
+  <h3 class="ui horizontal divider header">
+    <i class="pencil icon"></i>
+    Take Notes
+  </h3>
+</div>
+
+<div class="ui grid container fifty-spacer">
+  <div class="row">
+    <div class="one wide column"></div>
+    <div class="seven wide column">
+      <div class="ui big bordered image right floated">
+           <img class="bouncy ui centered large bordered image" src="/assets/img/feature-take-notes.jpg">
+       </div>
+    </div>
+    <div class="seven wide column">
+      <div class="ui header">
+        <h2>
+          Take Notes
+        </h2>
+      </div>
+      <p><br/>For every material you save to your course you can take notes while you read.  Select the text you want to note and save it as a:
+        <ul>
+          <li>Fact</li>
+          <li>Issue</li>
+          <li>Rule</li>
+          <li>Holding</li>
+          <li>Analysis</li>
+          <li>Note</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <div class="row fifty-spacer">
+    <div class="one wide column"></div>
+    <div class="seven wide column">
+      <div class="ui big bordered image right floated">
+         <img class="bouncy ui centered large bordered image" src="/assets/img/feature-edit-brief.jpg">
+       </div>
+    </div>
+    <div class="seven wide column">
+      <div class="ui header">
+        <h2>
+          Edit Briefs
+        </h2>
+      </div>
+      <p><br/>On the Brief screen you can review the notes you've taken from your material and edit them in real time.  Changes are saved automatically.  View your brief whenever you need it.</p>
+    </div>
+  </div>
+</div>
+
+<div class="ui grid container fifty-spacer">
+  <h3 class="ui horizontal divider header">
+    <i class="edit icon"></i>
+    Review Notes
+  </h3>
+</div>
+
+<div class="ui grid container fifty-spacer">
+  <div class="row">
+    <div class="one wide column"></div>
+    <div class="seven wide column">
+      <img class="bouncy ui centered large bordered image" src="/assets/img/feature-edit-outline.jpg">
+    </div>
+    <div class="seven wide column">
+      <h2 class="ui header">
+        <div class="content">
+          Edit Outlines
+        </div>
+      </h2>
+      <p><br/>All of your briefs can be automatically assembled into an outline.  You can choose the relevant sections you want in the outline.  You can organize the briefs however you see fit.</p>
+    </div>
+  </div>
+  <div class="row fifty-spacer">
+    <div class="one wide column"></div>
+    <div class="seven wide column">
+      <img class="bouncy ui centered large bordered image" src="/assets/img/feature-download-outline.jpg">
+    </div>
+    <div class="seven wide column">
+      <h2 class="ui header">
+        <div class="content">
+          Download Outlines
+        </div>
+      </h2>
+      <p><br/>You can always export your course outlines.  We allow you to download your course outlines as a document (.doc) or as a spreadsheet (.csv).</p>
+      <a href="/tmp/course-outline-sample.doc" target="_blank" class="ui button"><i class="file word outline icon"></i> Sample Document</a>
+      <a href="/tmp/course-outline-sample.csv" target="_blank" class="ui button"><i class="file excel outline icon"></i> Sample Spreadsheet</a>
+    </div>
+  </div>
+</div>
+
+<div class="ui grid container">
+  <h3 class="ui horizontal divider header">
+    <i class="block layout icon"></i>
+    Feature List
+  </h3>
+  <div class="eight wide column">
+    <table class="ui padded celled table">
+      <thead>
+        <tr>
+          <th>Features</th>
+        <th class="center aligned">Basic</th>
+        <th class="center aligned">Pro</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td>Add Classes</td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+        </tr>
+        <tr>
+          <td>Save Materials</td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+        </tr>
+        <tr>
+          <td>Read Cases</td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+        </tr>
+        <tr>
+          <td>Read Codes</td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+        </tr>
+        <tr>
+          <td>Take Notes</td>
+          <td class="center aligned"></td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+        </tr>
+        <tr>
+          <td>Edit Briefs</td>
+          <td class="center aligned"></td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+        </tr>
+        <tr>
+          <td>Generate Outlines</td>
+          <td class="center aligned"></td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+        </tr>
+        <tr>
+          <td>Export to.Doc</td>
+          <td class="center aligned"></td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+        </tr>
+        <tr>
+          <td>Export to Spreadsheet</td>
+          <td class="center aligned"></td>
+          <td class="center aligned"><i class="large green checkmark icon"></i></td>
+        </tr>
+    </tbody></table>
+  </div>
+  <div class="eight wide column">
+    <div class="ui icon message sl-cta-medium-grey">
+        <img src="/assets/img/study_legal_icon.png" class="logo-icon">
+        <div class="content">
+          <div class="header">
+            Ready to get started?
+          </div>
+          <p>Sign Up now. It's free.<button class="ui green right floated button register-btn">Sign Up <i class="chevron right icon"></i></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="fifty-spacer"></div>
+</div>
+{% include 'pages/inc/footer.html' %}

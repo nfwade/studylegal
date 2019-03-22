@@ -1,0 +1,35 @@
+{% include 'pages/inc/header.html' %}
+<div class="four wide column">
+  <div class="ui cards">
+    <div class="sticky card">
+      <a class="image" href="/browse/{{data.book.url_name}}">
+        <img src="/assets/img/books/{{data.book.url_name}}.jpg">
+      </a>
+      <div class="content">
+        <a class="header" href="/browse/{{data.book.url_name}}">{{data.book.full_name}}</a>
+        <div class="meta">
+          Edition: {{data.book.edition}}
+        </div>
+        <div class="description">
+          {{data.book.wikipedia_description|raw }}
+        </div>
+      </div>
+      <div class="extra content">
+        <a>
+        <div class="ui fluid buttons">
+          <a class="ui button" href="/browse/{{data.book.url_name}}">Read</a>
+          <a class="ui basic active button" target="_blank" href="{{data.book.purchase_url}}">Buy</a>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="ten wide column ">
+    <h2><a href="/browse/{{data.book.url_name}}">{{data.book.full_name}}</a></h2>
+    <h3><a href="/browse/{{data.book.url_name}}/{{data.section.url_section}}">{{data.section.section}}</a></h3>
+    <h4>{{data.material.full_name}}</h4>
+    {{data.material.content_parsed|raw}}
+  </div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}

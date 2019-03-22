@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="google-site-verification" content="gDJYfFX_MM2U5Yph_fRGsJHpCz4tYTPI4BPrr9SAlOo" />
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-52G262H');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/alertify.min.css">
+  <link rel="stylesheet" href="/assets/css/alertify.rtl.min.css">
+  <link rel="stylesheet" href="/assets/css/alertify.semantic.css">
+  <link rel="stylesheet" type="text/css" href="/assets/semantic/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <script src="/assets/js/jquery-2.1.4.js"></script>
+  <script src="/assets/js/jquery-ui.js"></script>
+  <script src="/assets/js/alertify.min.js"></script>
+  <script src="/assets/semantic/semantic.js"></script>
+  <script src="/assets/js/validate.js"></script>
+  <script src="/assets/js/validate-additional-methods.js"></script>
+  <script src="/assets/js/alert.js"></script>
+  <script src="/assets/js/sl-base.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body class="ui sl-type-{{ page.type }} sl-page-{{ page.name }}">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52G262H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="ui page-wrapper">
+  <div class="menu-wrapper">
+    <div class="ui container">
+  <header class="sixteen wide column">
+    <div class="ui inverted text menu">
+      <div class="item">
+        <a href="/">
+          <img class="logo" alt="Study Legal | Software for Law Students" src="/assets/img/logo_study_legal_inv.png"/>
+        </a>
+      </div>
+      <div class="right menu">
+        <a class="{% if page.name == 'home' %}active{% endif %} item" href="/">
+          Home
+        </a>
+        <a class="{% if page.name == 'Features' %}active{% endif %} item"  href="/features">
+          Features
+        </a>
+        <a class="{% if page.name == 'Learn' %}active{% endif %} item"  href="/learn">
+          Learn
+        </a>
+        <a class="{% if page.name == 'Browse' %}active{% endif %} item"  href="/browse">
+          Browse
+        </a>
+        {% if user.loggedin == true %}
+        <div class="ui dropdown item" tabindex="0">
+                  <div class="text">{{user.email}}</div>
+                  <i class="dropdown icon"></i>
+                  <div class="menu" tabindex="-1">
+                    <a class="item" href="/account">Account {% if user.pro == true %} (Pro) {% else %} (Basic) {% endif %}  </a>
+                                <a class="item" href="/learn">Help</a>
+                    <a class="item contact-btn">Contact</a>
+                    <div class="divider"></div>
+                    <a class="item" href="/user/logout"><i class="sign out icon"></i>Logout</a>
+                  </div>
+                </div>
+        <div class="item">
+          <a class="ui green button" href="/read">Read <i class="chevron right icon"></i></a>
+        </div>
+        {% else %}
+        <div class="item">
+          <a class="ui button login-btn">Login</a>
+        </div>
+        <div class="item">
+          <a class="ui green button register-btn"><i class="user icon"></i> Sign Up </a>
+        </div>
+        {% endif %}
+      </div>
+      <!-- end right menu-->
+    </div>
+  </header>
+</div>
+  </div>
+  {% if breadcrumbs.status == 'ready' %}
+    {% if data.book.full_name is defined %}
+      <div class="ui grid sl_breadcrumb_wrapper">
+        <div class="ui container ten wide column">
+          <div class="ui breadcrumb">
+            <!-- Browse -->
+            <a class="section" href="/browse">Browse</a>
+
+            <!-- Book-->
+            <i class="right chevron icon divider"></i>
+            <a class="{% if data.section.section is null %}active {% endif %}section" {% if data.section.section is defined %}href="/browse/{{data.book.url_name}}" {% endif %}>{{ data.book.full_name }}</a>
+
+            {% if data.section.section is defined %}
+            <!-- Section-->
+            <i class="right chevron icon divider"></i>
+            <a class="{% if data.material.full_name is null%}active {% endif %}section" href="/browse/{{data.book.url_name}}/{{ data.section.url_section}}">{{ data.section.section}}</a>
+            {% endif %}
+
+            {% if data.material.full_name is defined %}
+            <!-- Material -->
+            <i class="right chevron icon divider"></i>
+            <div class="active section">{{data.material.full_name}}</div>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+  <div class="ui container grid page-content">
+  {% if page.type == 'secondary' %}
+    <div class="fourteen wide column centered sl-secondary-header">
+        <div class="ui horizontal divider">
+          <h1>{{ page.title }}</h1>
+        </div>
+    </div>
+    {% endif %}

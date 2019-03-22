@@ -1,0 +1,58 @@
+{% include 'pages/inc/header.html' %}
+{% include 'admin/inc/admin-header.html' %}
+  <div class="sixteen wide column centered">
+    <div class="ui segment">
+      <h3> Parse Citations FIRST </h3>
+      <h4> If something is wrong, go back and fix it. </h4>
+    <form action="/apollo/add/citations" method="post" target="_blank" class="ui form" id="citation_form">
+      <div class="ui field">
+        <select class="ui dropdown" id="book" name="book">
+          {% for book in admindata.books %}
+            <option value="{{book.id}}">
+              {{book.id}} |
+              {{book.full_name}}
+              by
+              {{book.author}}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="ui field">
+        <label>Citations (Separated by Commas ,)</label>
+        <textarea id="material-list" name="material-list">{% for citation in admindata.citations %}{{citation}}><{% endfor %}</textarea>
+        <input type="hidden" value="" id="formated_citations" name="formated_citations"/>
+      </div>
+      <a class="ui button" id="parse_button">Parse Citations</a>
+      <script>
+      $(document)
+        .ready(function() {
+          $('#parse_button').click(function() {
+              $('#parse_result').html("");
+              data = $('#material-list').val();
+              result = data.split(", ");
+              quantity = result.length;
+              $('#citation_count').html(quantity);
+              jQuery.each(result, function( index, value ) {
+                $('#parse_result').append('<button class="medium ui black button">' + value + '</button>');
+            });
+            ret_result = JSON.stringify(result);
+          });
+          $('#add_to_database').click(function() {
+            data = $('#material-list').val();
+            result = data.split(", ");
+            ret_result = JSON.stringify(result);
+            $('#formated_citations').val(ret_result);
+            $('#citation_form').submit();
+
+          });
+        });
+      </script>
+       <a class="ui right floated green button" id="add_to_database">Add to Database</a>
+    </form>
+    <br/><hr/>
+    <h3>Citation Count: <span id="citation_count">0</span></h3>
+    <div id="parse_result" class="ui vertical buttons"></div>
+  </div>
+</div>
+{% include 'pages/modals/contact.html' %}
+{% include 'pages/inc/footer.html' %}
